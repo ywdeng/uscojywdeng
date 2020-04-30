@@ -1,0 +1,42 @@
+<!-- .navbar-expand-(sm|md|lg|xl) 決定選單出現的視窗寬度 -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" role="navigation">
+    <a class="navbar-brand" routerLink="/"><span class="h3 mx-1">實踐大學課程</span></a>
+
+    <!-- .navbar-toggler 漢堡式選單按鈕 -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu">
+        <!-- .navbar-toggler-icon 漢堡式選單圖示 -->
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- .collapse .navbar-collapse 用於外層中斷點群組和隱藏等覽列內容 -->
+    <!-- 選單項目和漢堡式折疊選單 -->
+    <div class="collapse navbar-collapse" id="#mainmenu">
+        <ul class="navbar-nav mr-auto">
+            <!-- active 為當前頁面 -->
+            <!-- .dropdown 下拉式選單 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="semaster1082" data-toggle="dropdown" style="cursor: pointer;">
+                    1082學期<span class="sr-only">(current)</span>
+                </a>
+                <!-- .dropdown-menu 下拉選單內容 -->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" routerLink="/course/1082/pm">專案管理</a>
+                    <a class="dropdown-item" routerLink="/course/1082/seminar">書報討論</a>
+                    <a class="dropdown-item" routerLink="/course/1082/cloud">雲端系統效能與分析</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="semaster1081" data-toggle="dropdown"
+                    style="cursor: pointer;">1081學期</a>
+                <!-- .dropdown-menu 下拉選單內容 -->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" routerLink="/course/1081/rstat">資訊技術與管理專題</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" routerLink="/vitae">Vitae</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<router-outlet></router-outlet>

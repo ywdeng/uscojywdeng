@@ -1,0 +1,106 @@
+{
+    "semaster": "1082",
+    "courseId": "cloud",
+    "courseNo": "PCE-157500",
+    "courseName": "雲端系統效能與分析",
+    "schedule": "時間地點：L406 星期五 11,12,13 節（18:30~21:00）",
+    "class": "資研一A (PCE)雲端系統效能與分析 選修3學分",
+    "lecture": {
+        "title": "教材：",
+        "baseUrl": "assets/1082/Cloud",
+        "items": [
+            {
+                "url": "awseducate-1st-linux-vm.pptx",
+                "target" : "_blank",
+                "name": "在 AWS EC2 建立 Linux VM"
+            },
+            {
+                "url": "LinuxEssentials.pptx",
+                "target" : "_blank",
+                "name": "Linux 簡介"
+            },
+            {
+                "url": "PythonEssentials.pptx",
+                "target" : "_blank",
+                "name": "Python 簡介"
+            }
+        ]
+    },
+    "assignment": {
+        "title": "練習材料：",
+        "baseUrl": "assets/1082/Cloud",
+        "items": [
+            {
+                "url": "loop",
+                "target" : "_blank",
+                "name": "The loop script"
+            },
+            {
+                "url": "countdown.py",
+                "target" : "_blank",
+                "name": "倒數計時"
+            },
+            {
+                "url": "countdown2.py",
+                "target" : "_blank",
+                "name": "倒數計時，輸入參數為負值時正向計數"
+            },
+            {
+                "url": "chicken_rabbit.py",
+                "target" : "_blank",
+                "name": "解雞兔同籠問題"
+            },
+            {
+                "url": "initcap.py",
+                "target" : "_blank",
+                "name": "每一個英文字的第一個字母都大寫"
+            },
+            {
+                "url": "initcap2.py",
+                "target" : "_blank",
+                "name": "每一個英文句子的第一個字母都大寫"
+            },
+            {
+                "url": "initcap-ex1.txt",
+                "target" : "_blank",
+                "name": "字首轉大寫測試範例資料"
+            }
+        ]
+    },
+    "quiz": {
+        "title": "參考資料：",
+        "baseUrl": "",
+        "items": [
+            {
+                "url": "https://docs.python.org/3/tutorial/index.html",
+                "target" : "_blank",
+                "name": "The Python Tutorial"
+            },
+            {
+                "url": "assets/1082/Cloud/AWS_Educate_Students.pdf",
+                "target" : "_blank",
+                "name": "AWS Educate 帳號申請流程介紹(學生)"
+            },
+            {
+                "url": "https://www.computervillage.org/articles/CommandLine.pdf",
+                "target" : "_blank",
+                "name": "Command Line Crash Course"
+            },
+            {
+                "url": "https://devhints.io/bash",
+                "target" : "_blank",
+                "name": "Bash scripting cheatsheet"
+            },
+            {
+                "url": "https://devhints.io/vim",
+                "target" : "_blank",
+                "name": "Vim cheatsheet"
+            },
+            {
+                "url": "https://study.holmesian.org/learn-python-the-hard-way/index.html",
+                "target" : "_blank",
+                "name": "笨办法学 Python （Learn Python The Hard Way）"
+            }
+        ]
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "semaster": "1082",
+    "courseId": "pm",
+    "courseNo": "P31-140800",
+    "courseName": "專案管理",
+    "schedule": "時間地點：L608 星期一 1,2,3 節（08:10~11:00）",
+    "class": "日資三乙 (P31)專案管理 專必3學分",
+    "lecture": {
+        "title": "教材：",
+        "baseUrl": "assets/1082/ProjectManagement",
+        "items": [
+            {
+                "url": "CH00/00-intro.pptx",
+                "target" : "_blank",
+                "name": "課程簡介"
+            },
+            {
+                "url": "CH01/01.pptx",
+                "target" : "_blank",
+                "name": "專案管理概論"
+            },
+            {
+                "url": "CH02/02.pptx",
+                "target" : "_blank",
+                "name": "組織系統與專案經理"
+            },
+            {
+                "url": "CH03/03.pptx",
+                "target" : "_blank",
+                "name": "專案管理過程"
+            },
+            {
+                "url": "CH04/04.pptx",
+                "target" : "_blank",
+                "name": "專案管理生命週期模式"
+            },
+            {
+                "url": "CH05/05.pptx",
+                "target" : "_blank",
+                "name": "專案整合管理"
+            },
+            {
+                "url": "CH06/06.pptx",
+                "target" : "_blank",
+                "name": "專案範疇管理"
+            },
+            {
+                "url": "CH07/07.pptx",
+                "target" : "_blank",
+                "name": "專案時程管理"
+            },
+            {
+                "url": "CH08/08.pptx",
+                "target" : "_blank",
+                "name": "專案成本管理"
+            },
+            {
+                "url": "#",
+                "target" : "_blank",
+                "name": "專案品質管理"
+            },
+            {
+                "url": "#",
+                "target" : "_blank",
+                "name": "專案資源管理"
+            },
+            {
+                "url": "#",
+                "target" : "_blank",
+                "name": "專案溝通管理"
+            },
+            {
+                "url": "#",
+                "target" : "_blank",
+                "name": "專案風險管理"
+            },
+            {
+                "url": "#",
+                "target" : "_blank",
+                "name": "專案採購管理"
+            },
+            {
+                "url": "#",
+                "target" : "_blank",
+                "name": "專案利害關係人管理"
+            }
+        ]
+    },
+    "assignment": {
+        "title": "習題：",
+        "baseUrl": "assets/1082/ProjectManagement",
+        "items": [
+            {
+                "url": "Quiz-01-ch1-ch4-ans.pdf",
+                "target" : "_blank",
+                "name": "第一次複習題解答"
+            },
+            {
+                "url": "Quiz-02-ch5-ch7-ans.pdf",
+                "target" : "_blank",
+                "name": "第二次複習題解答"
+            }
+        ]
+    },
+    "quiz": {
+        "title": "考試：",
+        "baseUrl": "assets/1082/ProjectManagement",
+        "items": [
+            {
+                "url": "midterm-ans.pdf",
+                "target" : "_blank",
+                "name": "期中考解答"
+            }
+        ]
+    }
+}

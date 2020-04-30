@@ -1,0 +1,41 @@
+{
+    "semaster": "1082",
+    "courseId": "seminar",
+    "courseNo": "XGK-157200",
+    "courseName": "書報討論",
+    "schedule": "時間地點：L406 星期二 11,12,13 節（18:30~21:00）",
+    "class": "資研一甲 (XGK)書報討論 專必3學分",
+    "lecture": {
+        "title": "排程：",
+        "baseUrl": "assets/1082/Seminar",
+        "items": [
+            {
+                "url": "1082SeminarNight.xlsx",
+                "target" : "_blank",
+                "name": "論文報告排程"
+            }
+        ]
+    },
+    "assignment": {
+        "title": "簡報資料：",
+        "baseUrl": "assets/1082/Seminar",
+        "items": [
+            {
+                "url": "09007701.pptx",
+                "target" : "_blank",
+                "name": "鄧姚文老師，2020-03-10"
+            }
+        ]
+    },
+    "quiz": {
+        "title": "論文網站：",
+        "baseUrl": "",
+        "items": [
+            {
+                "url": "https://ieeexplore.ieee.org",
+                "target" : "_blank",
+                "name": "IEEE Xplore"
+            }
+        ]
+    }
+}

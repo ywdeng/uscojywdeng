@@ -1,0 +1,25 @@
+#!/bin/bash
+
+FIN=99999
+
+if [ "$1" != "" ]
+then
+  FIN=$1
+fi
+
+CNT=0
+X=0
+Y=0
+PAT=('|' '/' '-' '\\')
+
+echo "Count to $FIN ..."
+
+while [ "$CNT" -lt "$FIN" ]
+do
+  CNT=$[ $CNT + 1 ]
+  X=`expr \( $X + 1 \) % 4`
+  Y=`expr \( $Y - 1 \) % 4`
+  echo -e -n "\r ${PAT[$Y]} $CNT ${PAT[$X]}\t"
+  sleep 1
+done
+echo -e "\r------ end ------"
