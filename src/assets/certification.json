@@ -1,0 +1,204 @@
+{
+    "certifications": [
+        {
+            "certTitle": "RHCE",
+            "certTitleImage": {
+                "URI": "/images/YAO_WEN_DENG_RHCE.png",
+                "title": "鄧姚文的 RHCE 證書"
+            },
+            "certExam": "Red Hat 紅帽 Linux 工程師<br />RH302 RHCE Certification Lab Exam",
+            "certDate": "2006/11",
+            "certID": "804006683223133"
+        },
+        {
+            "certTitle": "Microsoft Specialist",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "Programming in HTML5 with JavaScript and CSS3 Specialist",
+            "certDate": "2013/09/03",
+            "certID": "E376-9989"
+        },
+        {
+            "certTitle": "MCSD",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "Microsoft Certified Solutions Developer: Web Applications",
+            "certDate": "2013/09/03",
+            "certID": "E376-9988"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-349<br>Microsoft Technology Associate: Windows Operating System Fundamentals",
+            "certDate": "2013/01/07",
+            "certID": "E123-7922"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-361<br>Microsoft Technology Associate: Software Development Fundamentals",
+            "certDate": "2013/01/04",
+            "certID": "E123-1652"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-362<br>Microsoft Technology Associate: Windows Development Fundamentals",
+            "certDate": "2013/01/07",
+            "certID": "E123-7920"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-363<br>Microsoft Technology Associate: Web Development Fundamentals",
+            "certDate": "2013/01/15",
+            "certID": "E133-0476"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-364<br>Microsoft Technology Associate: Database Administration Fundamentals",
+            "certDate": "2013/01/16",
+            "certID": "E133-0477"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-365<br>Microsoft Technology Associate: Windows Server Administration Fundamentals",
+            "certDate": "2013/01/15",
+            "certID": "E133-0478"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-366<br>Microsoft Technology Associate: Networking Fundamentals",
+            "certDate": "2013/01/04",
+            "certID": "E122-1653"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-367<br>Microsoft Technology Associate: Security Fundamentals",
+            "certDate": "2013/01/07",
+            "certID": "E123-7921"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-372<br>Microsoft Technology Associate: .NET Fundamentals",
+            "certDate": "2013/01/15",
+            "certID": "E133-0379"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-373<br>Microsoft Technology Associate: Mobile Development Fundamentals",
+            "certDate": "2013/01/16",
+            "certID": "E133-0480"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-374<br>Microsoft Technology Associate: Game Development Fundamentals",
+            "certDate": "2013/01/16",
+            "certID": "E133-0481"
+        },
+        {
+            "certTitle": "MTA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "MTA-98-375<br>Microsoft Technology Associate: HTML5 Application Development Fundamentals",
+            "certDate": "2013/01/16",
+            "certID": "E133-0482"
+        },
+        {
+            "certTitle": "MCP",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "Exam 070-315<br>Developing and Implementing Web Applications with Microsoft Visual C# .NET and Microsoft Visual Studio .NET",
+            "certDate": "2006/09",
+            "certID": "MCP ID#3732259"
+        },
+        {
+            "certTitle": "SCSA",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "昇陽 Solaris 作業系統管理師<br>Sun Microsystems 310-200<br>Sun Certified System Administrator for Solaris 10 OS, Part 1",
+            "certDate": "2008/01",
+            "certID": "SR2442800"
+        },
+        {
+            "certTitle": "SCWCD",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "昇陽 JAVA 網頁元件設計師<br>Sun Microsystems 310-081<br>Sun Certified Web Component Developer for the Java 2 Platform, Enterprise Edition 1.4",
+            "certDate": "2008/01",
+            "certID": ""
+        },
+        {
+            "certTitle": "SCJP",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "昇陽 JAVA 程式設計師<br>Sun Microsystems 310-055<br>Sun Certified Programmer for the Java 2 Platform, SE 5.0",
+            "certDate": "2006/10",
+            "certID": ""
+        },
+        {
+            "certTitle": "APMP",
+            "certTitleImage": {
+                "URI": "",
+                "title": ""
+            },
+            "certExam": "AFAQ AFNOR International 法國標協專案管理師<br>AFAQ Project Management Professional (APMP) Level C",
+            "certDate": "2007/06",
+            "certID": "TC416-2007-06-07"
+        }
+    ]
+}

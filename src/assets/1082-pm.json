@@ -60,17 +60,17 @@
                 "name": "專案品質管理"
             },
             {
-                "url": "#",
+                "url": "CH10/10.pptx",
                 "target" : "_blank",
                 "name": "專案資源管理"
             },
             {
-                "url": "#",
+                "url": "CH11/11.pptx",
                 "target" : "_blank",
                 "name": "專案溝通管理"
             },
             {
-                "url": "#",
+                "url": "CH12/12.pptx",
                 "target" : "_blank",
                 "name": "專案風險管理"
             },
@@ -110,6 +110,11 @@
                 "url": "midterm-ans.pdf",
                 "target" : "_blank",
                 "name": "期中考解答"
+            },
+            {
+                "url": "Quiz-03-ch8-ch10-ans.pdf",
+                "target" : "_blank",
+                "name": "3rd 隨堂考試 CH08~Ch10 解答"
             }
         ]
     }

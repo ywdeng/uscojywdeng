@@ -1,0 +1,88 @@
+{
+    "employment": [
+        {
+            "orgName": "翔威國際股份有限公司",
+            "orgLink": "https://www.shinewave.com/",
+            "title": "技術長",
+            "duration": "2015/08~Now",
+            "job": "研發"
+        },
+        {
+            "orgName": "翔威國際股份有限公司",
+            "orgLink": "https://www.shinewave.com/",
+            "title": "資訊室主管",
+            "duration": "2017/08~Now",
+            "job": "行政管理、系統開發"
+        },
+        {
+            "orgName": "實踐大學資訊科技與管理系",
+            "orgLink": "http://www.im.usc.edu.tw",
+            "title": "兼任助理教授",
+            "duration": "2000/08~Now",
+            "job": "教學"
+        },
+        {
+            "orgName": "中華科技大學資訊工程系",
+            "orgLink": "https://www.facebook.com/twcustcsie/",
+            "title": "專任助理教授",
+            "duration": "2010/08~2015/07",
+            "job": "教學、研究、服務"
+        },
+        {
+            "orgName": "翔威國際股份有限公司",
+            "orgLink": "https://www.shinewave.com/",
+            "title": "技術顧問",
+            "duration": "2008/03~2015/07",
+            "job": "技術諮詢與研發"
+        },
+        {
+            "orgName": "中華科技大學資訊管理系",
+            "orgLink": "http://im.cust.edu.tw/",
+            "title": "專任助理教授",
+            "duration": "2007/08~2010/07",
+            "job": "教學、研究、服務"
+        },
+        {
+            "orgName": "開南大學資訊管理系",
+            "orgLink": "https://im.knu.edu.tw/",
+            "title": "專任助理教授",
+            "duration": "2002/02~2007/07",
+            "job": "教學、研究、服務"
+        },
+        {
+            "orgName": "開南管理學院資訊科技中心",
+            "orgLink": "https://itc.knu.edu.tw/",
+            "title": "主任",
+            "duration": "2003/08~2004/07",
+            "job": "行政管理、系統開發"
+        },
+        {
+            "orgName": "開南管理學院教務處註冊組",
+            "orgLink": "https://regcurr.knu.edu.tw/",
+            "title": "組長",
+            "duration": "2002/03~2003/09",
+            "job": "行政管理、招生"
+        },
+        {
+            "orgName": "翔威國際股份有限公司",
+            "orgLink": "https://www.shinewave.com",
+            "title": "經理",
+            "duration": "2000/08~2002/02",
+            "job": "專案開發"
+        },
+        {
+            "orgName": "龍華技術學院資訊管理系",
+            "orgLink": "http://web.im.lhu.edu.tw/",
+            "title": "系主任",
+            "duration": "2000/02~2000/07",
+            "job": "行政管理"
+        },
+        {
+            "orgName": "龍華技術學院資訊管理系",
+            "orgLink": "http://web.im.lhu.edu.tw/",
+            "title": "專任助理教授",
+            "duration": "1999/08~2000/07",
+            "job": "教學、研究、服務"
+        }
+    ]
+}

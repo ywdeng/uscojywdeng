@@ -1,0 +1,35 @@
+<div id="vitae-certification" class="container" *ngIf="certData">
+    <div class="row" id="cert-images">
+        <img src="/images/red_hat_cert_eng_logo-clr.png" alt="RHCE Logo" />
+        <img src="/images/logo_mcsd.jpg" alt="MCSD Logo" />
+        <img src="/images/logo-MCP.gif" alt="MCP Logo" />
+        <img src="/images/java_cert_web_comp_dev_cmyk.png" alt="SCJP Logo" />
+        <img src="/images/java_cert_prog_cmyk.png" alt="SCJP Logo" />
+    </div>
+    <table class="table w-auto table-hover">
+        <thead>
+            <tr class="table-info">
+                <th>證照名稱</th>
+                <th>考試名稱</th>
+                <th>取得日期</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of certData['certifications']" ng-class-odd="row-odd" ng-class-even="row-even">
+                <td>
+                    <div [innerHTML]="item['certTitle']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['certExam']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['certDate']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['certID']"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

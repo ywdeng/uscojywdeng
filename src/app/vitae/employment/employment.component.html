@@ -1,0 +1,28 @@
+<div id="vitae-employment" class="container" *ngIf="empData">
+    <table class="table w-auto table-hover">
+        <thead>
+            <tr class="table-info">
+                <th>服務單位</th>
+                <th>職稱</th>
+                <th>服務期間</th>
+                <th>職務</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of empData['employment']" ng-class-odd="row-odd" ng-class-even="row-even">
+                <td>
+                    <div [innerHTML]="item['organization']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['title']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['duration']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['job']"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

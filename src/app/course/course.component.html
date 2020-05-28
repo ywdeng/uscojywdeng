@@ -1,36 +1,36 @@
 <div class="container" *ngIf="courseData">
-    <div class="page-header text-white bg-primary" role="banner">
-        <h1>{{ courseData['courseName'] }}</h1>
-        <p>{{ courseData['schedule'] }}</p>
-        <p>{{ courseData['class'] }}</p>
+  <div class="page-header text-white bg-primary" role="banner">
+    <h1>{{ courseData['courseName'] }}</h1>
+    <p>{{ courseData['schedule'] }}</p>
+    <p>{{ courseData['class'] }}</p>
+  </div>
+  <div class="row" *ngIf="courseData['courseNo']">
+    <div class="col-md-12" *ngIf="courseData['lecture']">
+      <h6>{{ courseData['lecture']['title'] }}</h6>
+      <ul>
+        <li *ngFor="let item of courseData['lecture']['items']">
+          <a href="{{ item['fullUrl'] }}" target="{{ item['target'] }}" *ngIf="item['fullUrl']; else plainLectureItemBlock">{{ item['name'] }}</a>
+          <ng-template #plainLectureItemBlock>{{ item['name'] }}</ng-template>
+        </li>
+      </ul>
     </div>
-    <div class="row" *ngIf="courseData['courseNo']">
-        <div class="col-md-12" *ngIf="courseData['lecture']">
-            <h6>{{ courseData['lecture']['title'] }}</h6>
-            <ul>
-                <li *ngFor="let item of courseData['lecture']['items']">
-                    <a href="{{ item['fullUrl'] }}" target="{{ item['target'] }}" *ngIf="item['fullUrl']; else plainLectureItemBlock">{{ item['name'] }}</a>
-                    <ng-template #plainLectureItemBlock>{{ item['name'] }}</ng-template>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-12" *ngIf="courseData['assignment']">
-            <h6>{{ courseData['assignment']['title'] }}</h6>
-            <ul>
-                <li *ngFor="let item of courseData['assignment']['items']">
-                    <a href="{{ item['fullUrl'] }}" target="{{ item['target'] }}" *ngIf="item['fullUrl']; else plainAssignmentItemBlock">{{ item['name'] }}</a>
-                    <ng-template #plainAssignmentItemBlock>{{ item['name'] }}</ng-template>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-12" *ngIf="courseData['quiz']">
-            <h6>{{ courseData['quiz']['title'] }}</h6>
-            <ul>
-                <li *ngFor="let item of courseData['quiz']['items']">
-                    <a href="{{ item['fullUrl'] }}" target="{{ item['target'] }}" *ngIf="item['fullUrl']; else plainQuizItemBlock">{{ item['name'] }}</a>
-                    <ng-template #plainQuizItemBlock>{{ item['name'] }}</ng-template>
-                </li>
-            </ul>
-        </div>
+    <div class="col-md-12" *ngIf="courseData['assignment']">
+      <h6>{{ courseData['assignment']['title'] }}</h6>
+      <ul>
+        <li *ngFor="let item of courseData['assignment']['items']">
+          <a href="{{ item['fullUrl'] }}" target="{{ item['target'] }}" *ngIf="item['fullUrl']; else plainAssignmentItemBlock">{{ item['name'] }}</a>
+          <ng-template #plainAssignmentItemBlock>{{ item['name'] }}</ng-template>
+        </li>
+      </ul>
     </div>
+    <div class="col-md-12" *ngIf="courseData['quiz']">
+      <h6>{{ courseData['quiz']['title'] }}</h6>
+      <ul>
+        <li *ngFor="let item of courseData['quiz']['items']">
+          <a href="{{ item['fullUrl'] }}" target="{{ item['target'] }}" *ngIf="item['fullUrl']; else plainQuizItemBlock">{{ item['name'] }}</a>
+          <ng-template #plainQuizItemBlock>{{ item['name'] }}</ng-template>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
