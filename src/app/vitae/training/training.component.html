@@ -1,1 +1,24 @@
-<p>training works!</p>
+<div id="vitae-training" class="container" *ngIf="trainData">
+    <table class="table w-auto table-hover">
+        <thead>
+            <tr class="table-info">
+                <th>課程名稱</th>
+                <th>訓練單位</th>
+                <th>完成日期</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of trainData['training']" ng-class-odd="row-odd" ng-class-even="row-even">
+                <td>
+                    <div [innerHTML]="item['course']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['provider']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['certDate']"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

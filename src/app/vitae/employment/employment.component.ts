@@ -19,7 +19,7 @@ export class EmploymentComponent implements OnInit {
   }
   prepareData(data): void {
     data["employment"].forEach(item => {
-      item.organization = "<a target='_blank' href='" + item["orgLink"] + "'>" + item["orgName"] + "</a>"
+      item.organization = "<a target='_blank' href='" + item["orgLink"] + "'>" + item["orgName"] + "</a>";
     });
   }
 }
