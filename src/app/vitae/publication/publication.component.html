@@ -1,1 +1,14 @@
-<p>publication works!</p>
+<div id="vitae-publication" class="container" *ngIf="pubData">
+    <h4>書籍</h4>
+    <ol>
+        <li *ngFor="let book of pubData['books']"><span [innerHTML]="book"></span></li>
+    </ol>
+    <h4>期刊論文</h4>
+    <ol>
+        <li *ngFor="let journal of pubData['journalPapers']"><span [innerHTML]="journal"></span></li>
+    </ol>
+    <h4>研討會論文</h4>
+    <ol>
+        <li *ngFor="let conf of pubData['conferencePapers']"><span [innerHTML]="conf"></span></li>
+    </ol>
+</div>

@@ -1,1 +1,36 @@
-<p>project works!</p>
+<div id="vitae-project" class="container" *ngIf="projData">
+    <table class="table w-auto table-hover">
+        <thead>
+            <tr class="table-info">
+                <th>計畫名稱</th>
+                <th>補助或委託機構</th>
+                <th>起訖年月</th>
+                <th>執行情形</th>
+                <th>計畫內擔任工作</th>
+                <th>經費總額</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of projData['research']" ng-class-odd="row-odd" ng-class-even="row-even">
+                <td>
+                    <div [innerHTML]="item['title']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['sponsor']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['duration']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['status']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['job']"></div>
+                </td>
+                <td>
+                    <div [innerHTML]="item['amount']"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

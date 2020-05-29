@@ -1,23 +1,36 @@
 {
-    "training": [        
+    "training": [
         {
-            "courseName": "SSDLC進階課程",
+            "courseName": "資訊安全教育訓練實務課程-資訊系統安全開發與驗證實務",
             "certTitleImage": {
                 "URI": "",
-                "title": "資安軟體開發生命週期"
+                "title": "SSDLC進階課程，講師：巫嘉勳"
+            },
+            "courseOrg": "數聯資安股份有限公司",
+            "courseOrgURI": {
+                "URI": "https://www.issdu.com.tw",
+                "title": "數聯資安股份有限公司"
+            },
+            "certDate": "2020/05/29"
+        },
+        {
+            "courseName": "資訊安全教育訓練基礎課程-軟體安全需求與設計",
+            "certTitleImage": {
+                "URI": "",
+                "title": "SSDLC基礎課程，講師：王耀華"
             },
             "courseOrg": "財團法人資訊工業策進會",
             "courseOrgURI": {
                 "URI": "https://www.iii.org.tw/",
                 "title": "財團法人資訊工業策進會"
             },
-            "certDate": "2020/05/29"
+            "certDate": "2020/05/27"
         },
         {
-            "courseName": "SSDLC基礎課程",
+            "courseName": "資訊安全教育訓練基礎課程-安全軟體發展生命週期概論",
             "certTitleImage": {
                 "URI": "",
-                "title": "資安軟體開發生命週期"
+                "title": "SSDLC基礎課程，講師：王耀華"
             },
             "courseOrg": "財團法人資訊工業策進會",
             "courseOrgURI": {

@@ -1,0 +1,34 @@
+{
+    "books": [        
+        "鄧姚文　譯, <i>PCMCIA系統架構：16位元PC卡　第二版</i>, 碁峰資訊股份有限公司, 1999年1月, ISBN 957-566-387-X.<br>原著：D. Anderson, <i>PCMCIA Architecture: 16-bit PC Cards</i>, Addison-Wesley, 2nd Ed., 1995.",
+        "鄧姚文　譯, <i>MCSE訓練手冊：Networking Essentials</i>, 碁峰資訊股份有限公司, 1999年3月, ISBN 957-566-434-5.<br>原著：J. Casad and D. Newland, <i>MCSE Training Guide: Networking Essentials</i>, New Riders Publishing, 1997.",
+        "楊玄彰、鄧姚文　編譯, <i>Visual C++ 6超級手冊</i>, 碁峰資訊股份有限公司, 1999年5月, ISBN 957-566-497-3.<br>原著：Kate Gregory, <i>Special Edition Using Visual C++ 6</i>, QUE CONSUMER an imprint of Macmillan Computer Publishing U.S.A, 1998.",
+        "翔威國際股份有限公司, <i>OpenLinux eDesktop入門</i>, 商智文化, 2001年1月, ISBN 957-667-819-6.<br>第一章：簡介、第四章：操作。.",
+        "翔威國際股份有限公司, <i>OpenLinux eDesktop應用</i>, 商智文化, 2001年3月, ISBN 957-667-858-7.<br>第四章：程式開發環境.",
+        "鄭王駿、鄧姚文　編著, <i>電腦及網際網路（第二版）</i>, 全華科技圖書股份有限公司, 2001年8月, ISBN 957-21-3309-8.<br>原著：Douglas E. Comer, Computer Networks and Internets, 2nd Ed., Prentice Hall, 1999. ISBN 0130836176.",
+        "鄭王駿、鄧姚文　編著, <i>電腦及網際網路（第三版）</i>, 全華科技圖書股份有限公司, 2002年12月, ISBN 957-21-3764-6.<br>原著：Douglas E. Comer, Computer Networks and Internets, 3rd Ed., Prentice Hall, 2001. ISBN 0130935816.",
+        "鄭王駿、鄧姚文　編著, <i>電腦及網際網路（第四版）</i>, 全華科技圖書股份有限公司, 2005年8月, ISBN 957-21-4978-4.<br>原著：Douglas E. Comer, Computer Networks and Internets with Internet Applications, 4th Ed., Prentice Hall, 2004. ISBN 0-13-143351-2.",
+        "鄧姚文、林德芬、陳泰良　編譯, <i>作業系統入門（第三版）</i>, 高立圖書股份有限公司, 2006年5月, ISBN 986-7138-30-9.<br>原著：Ida M. Flynn and Ann M. McHoes, Understanding Operating Systems, 3rd Ed., Brooks/Cole (Thomson), 2001. ISBN 0-534-37666-5.",
+        "鄧姚文　編譯, <i>作業系統概論</i>, 高立圖書股份有限公司, 2010年9月, ISBN 9789866637971.<br>原著：Ann M. McHoes and Ida M. Flynn, Understanding Operating Systems, 6th Ed., CENGAGE, 2011, ISBN 9780538470049."
+    ],
+    "journalPapers":[
+        "W. T. Chen（陳文村）, <u>Y. W. Deng（鄧姚文）</u>, N. F. Huang（黃能富）, J. S. Wang（王家祥）, and H. C. Lin（林華君）, &quot;On the design of a high-speed network environment for multimedia applications,&quot; <i>Proceedings of the National Science Council, Republic of China, Part A: Physical Science and Engineering</i>, Vol.23, No. 1, January 1999, pp. 111–124.",
+        "W. T. Chen and <u>Y. W. Deng</u>, &quot;PPCN: A high-performance copy network architecture for large scale ATM switching systems,&quot; <i>IEICE Transactions on Communications</i>, Vol. E82-B, No. 1, January 1999, pp. 1–13.",
+	"Y. W. Deng</u> and W. T. Chen, &quot;An efficient parallel multicast ATM switch,&quot; <i>IEE Proceedings - Communications</i>, Vol. 147, No. 2, April, 2000, pp. 123–132."
+    ],
+    "conferencePapers": [
+	    "W. T. Chen, <u>Y. W. Deng</u>, W. J. Cheng（鄭王駿）, and W. T. Lin（林文宗）, &quot;The design and implementation of a communication platform for multimedia multiparty applications,&quot; in <i>Proc. RAMS&#39;95–the First Workshop on Real-time and Multimedia Systems</i>, Academia Sinica, Taipei, Taiwan, July 1995, pp. 135–144.",
+	    "W. T. Chen, N. F. Huang, J. S. Wang, H. C. Lin, and <u>Y. W. Deng</u>, &quot;A high-speed network environment for multimedia applications,&quot; (invited paper) in <i>Proc. of the International Conference on Computer Systems for Industrial Applications</i>, Hsinchu, Taiwan, April 1996, pp. 270–277.",
+	    "W. Y. Hwang（黃武元）, W. T. Chen, and <u>Y. W. Deng</u>, &quot;A high-performance ATM switch with completely and fairly shared buffers,&quot; in <i>Proc. ICPADS&#39;97–International Conference on Parallel And Distributed Systems</i>, Seoul, Korea, December 1997, pp. 203–208.",
+	    "W. T. Chen, <u>Y. W. Deng</u> and L. H. Liao（廖立祥）, &quot;TPCN: A nonblocking self-routing copy network for high-speed switching systems,&quot; in <i>Proc.  APCC&#39;97–3rd Asia Pacific Conference on Communications</i>, Sydney, Australia, December 1997, pp. 1428–1432.",
+	    "W. T. Chen and <u>Y. W. Deng</u>, &quot;A two-stage nonblocking copy network for ATM switching systems,&quot; in Proc. TJCOM&#39;98–Taiwan-Japan Joint Workshop on the Latest Development of Telecommunication Research, Hsin-Chu, Taiwan, January 1998, pp. 83–88.",
+	    "W. T. Chen, <u>Y. W. Deng</u>, C. P. Wang（王全璞）, N. F. Huang, H. C. Lin, C. C. Lu（呂忠津） and R. C. Chang（張瑞雄）, &quot;On the design of a high-performance ATM bridge,&quot; in <i>Proc. ICATM&#39;98–IEEE International Conference on ATM</i>, Colmar, France, June 1998, pp. 207–213.",
+	    "W. T. Chen, G. Y. Chiou（邱繼陽）, W. T. Lin, and <u>Y. W. Deng</u>, &quot;A QoS Guaranteed MAC Protocol for Wireless ATM Networks,&quot; in Proc. ICOIN-13–The 13th International Conference on Information Networking, Cheju Island, Korea, January 1999, pp. 7A-4.1–7A-4.6.",
+	    "<u>鄧姚文</u>、鄭王駿（2007），IP 溯源之研究， 第三屆資訊管理學術暨專案管理實務國際研討會， 桃園：開南大學。",
+	    "鄭王駿、<u>鄧姚文</u>（2007），以無偽造 IP 來源位址的預防機制封鎖網路攻擊，第九屆網際空間：資安、犯罪與法律社會學術研究暨實務研討會論文集，pp. 297-304。",
+	    "鄭王駿, <u>鄧姚文</u>, 李孟晃, 蔡政璋（2011）, 一個基於灰名單的垃圾郵件過濾機制, 2011 電子商務與數位生活研討會論文集, pp. 1367-1389。 ",
+	    "鄭王駿, <u>鄧姚文</u>, 李瑞元, 許皓政, 賴俊維, 陳琬茹, 陳秋綾, 陳宗賢（2011）, 使用動態網路管理機制實現一個具有網路防弊特性的線上測驗環境, 2011 電子商務與數位生活研討會論文集, pp. 1390-1398。",
+	    "鄭王駿, 王可為, 黃耀賢, <u>鄧姚文</u>（2011）, 設計與實作具精簡且有效率的嵌入式系統多點觸控手勢辨識器, 2011 全國計算機會議, pp. 82-93。",
+	    "鄭王駿, <u>鄧姚文</u>, 張雋文, 高偉翔, 張書瑋, 廖元銘 （2012）, 基於雲端計算之反垃圾郵件服務設計, 第18屆 海峽兩岸資訊管理發展與策略學術研討會, 2012 年 8 月, pp. 30。"
+    ]
+}

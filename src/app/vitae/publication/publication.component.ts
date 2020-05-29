@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalDataService } from "../../local-data.service"
 
 @Component({
   selector: 'app-publication',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./publication.component.styl']
 })
 export class PublicationComponent implements OnInit {
+  pubData: {};
 
-  constructor() { }
+  constructor(private localData: LocalDataService) { }
 
   ngOnInit(): void {
+    this.localData.getJSON("assets/publication.json").subscribe(data => {
+      this.pubData = data;
+    });
   }
 
 }
