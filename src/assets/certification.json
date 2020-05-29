@@ -3,7 +3,7 @@
         {
             "certTitle": "RHCE",
             "certTitleImage": {
-                "URI": "/images/YAO_WEN_DENG_RHCE.png",
+                "URI": "assets/images/YAO_WEN_DENG_RHCE.png",
                 "title": "鄧姚文的 RHCE 證書"
             },
             "certExam": "Red Hat 紅帽 Linux 工程師<br />RH302 RHCE Certification Lab Exam",
