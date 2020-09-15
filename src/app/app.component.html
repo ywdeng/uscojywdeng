@@ -17,9 +17,17 @@
           <!-- active 為當前頁面 -->
           <!-- .dropdown 下拉式選單 -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="semaster1082" data-toggle="dropdown" style="cursor: pointer;">
-              1082學期<span class="sr-only">(current)</span>
+            <a class="nav-link dropdown-toggle active" id="semaster1091" data-toggle="dropdown" style="cursor: pointer;">
+              1091學期<span class="sr-only">(current)</span>
             </a>
+            <!-- .dropdown-menu 下拉選單內容 -->
+            <div class="dropdown-menu">
+              <a class="dropdown-item" routerLink="/course/1091/security">資訊安全</a>
+              <a class="dropdown-item" routerLink="/course/1091/pm">資訊專案管理</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="semaster1082" data-toggle="dropdown" style="cursor: pointer;">1082學期</a>
             <!-- .dropdown-menu 下拉選單內容 -->
             <div class="dropdown-menu">
               <a class="dropdown-item" routerLink="/course/1082/pm">專案管理</a>
@@ -28,8 +36,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="semaster1081" data-toggle="dropdown"
-              style="cursor: pointer;">1081學期</a>
+            <a class="nav-link dropdown-toggle" id="semaster1081" data-toggle="dropdown" style="cursor: pointer;">1081學期</a>
             <!-- .dropdown-menu 下拉選單內容 -->
             <div class="dropdown-menu">
               <a class="dropdown-item" routerLink="/course/1081/rstat">資訊技術與管理專題</a>

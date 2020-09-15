@@ -1,0 +1,101 @@
+{
+    "semaster": "1091",
+    "courseId": "pm",
+    "courseNo": "A5I-170400",
+    "courseName": "資訊專案管理",
+    "schedule": "時間地點：H302 星期三 11,12,13 節（18:30~21:00）",
+    "class": "資研二甲 (A5I)資訊專案管理 專必3學分",
+    "lecture": {
+        "title": "教材：",
+        "baseUrl": "assets/1091/ProjectManagement",
+        "items": [
+            {
+                "url": "CH00/00-intro.pptx",
+                "target" : "_blank",
+                "name": "課程簡介"
+            },
+            {
+                "url": "CH01/01.pptx",
+                "target" : "_blank",
+                "name": "專案管理概論"
+            },
+            {
+                "url": "CH02/02.pptx",
+                "target" : "_blank",
+                "name": "組織系統與專案經理"
+            },
+            {
+                "url": "CH03/03.pptx",
+                "target" : "_blank",
+                "name": "專案管理過程"
+            },
+            {
+                "url": "CH04/04.pptx",
+                "target" : "_blank",
+                "name": "專案管理生命週期模式"
+            },
+            {
+                "url": "CH05/05.pptx",
+                "target" : "_blank",
+                "name": "專案整合管理"
+            },
+            {
+                "url": "CH06/06.pptx",
+                "target" : "_blank",
+                "name": "專案範疇管理"
+            },
+            {
+                "url": "CH07/07.pptx",
+                "target" : "_blank",
+                "name": "專案時程管理"
+            },
+            {
+                "url": "CH08/08.pptx",
+                "target" : "_blank",
+                "name": "專案成本管理"
+            },
+            {
+                "url": "CH09/09.pptx",
+                "target" : "_blank",
+                "name": "專案品質管理"
+            },
+            {
+                "url": "CH10/10.pptx",
+                "target" : "_blank",
+                "name": "專案資源管理"
+            },
+            {
+                "url": "CH11/11.pptx",
+                "target" : "_blank",
+                "name": "專案溝通管理"
+            },
+            {
+                "url": "CH12/12.pptx",
+                "target" : "_blank",
+                "name": "專案風險管理"
+            },
+            {
+                "url": "#",
+                "target" : "_blank",
+                "name": "專案採購管理"
+            },
+            {
+                "url": "#",
+                "target" : "_blank",
+                "name": "專案利害關係人管理"
+            }
+        ]
+    },
+    "assignment": {
+        "title": "習題：",
+        "baseUrl": "assets/1091/ProjectManagement",
+        "items": [
+        ]
+    },
+    "quiz": {
+        "title": "考試：",
+        "baseUrl": "assets/1091/ProjectManagement",
+        "items": [
+        ]
+    }
+}

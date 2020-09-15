@@ -1,0 +1,36 @@
+{
+    "semaster": "1091",
+    "courseId": "security",
+    "courseNo": "P05-138700",
+    "courseName": "資訊安全",
+    "schedule": "時間地點：L608 星期五 2,3,4 節（09:10~12:00）",
+    "class": "日資四甲 (P05)資訊安全 專必3學分",
+    "lecture": {
+        "title": "教材：",
+        "baseUrl": "assets/1091/Security",
+        "items": [
+            {
+                "url": "00-introduction.pptx",
+                "target" : "_blank",
+                "name": "課程簡介"
+            },
+            {
+                "url": "CH01/01-overview.pptx",
+                "target" : "_blank",
+                "name": "Overview 資訊安全概述"
+            }
+        ]
+    },
+    "assignment": {
+        "title": "習題：",
+        "baseUrl": "assets/1082/Security",
+        "items": [
+        ]
+    },
+    "quiz": {
+        "title": "考試：",
+        "baseUrl": "assets/1082/Security",
+        "items": [
+        ]
+    }
+}

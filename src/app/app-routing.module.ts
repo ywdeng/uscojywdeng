@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'course/1082/pm',
+    redirectTo: 'course/1091/security',
     pathMatch: 'full'
   },
   {
