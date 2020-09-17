@@ -18,6 +18,11 @@
                 "url": "CH01/01-overview.pptx",
                 "target" : "_blank",
                 "name": "Overview 資訊安全概述"
+            },
+            {
+                "url": "CH02/02-CryptographicTools.pptx",
+                "target" : "_blank",
+                "name": "Cryptographic Tools 密碼學工具"
             }
         ]
     },
