@@ -1,0 +1,86 @@
+{
+    "semaster": "1081",
+    "courseId": "rstat",
+    "courseNo": "BBE-219300",
+    "courseName": "社群運算與巨量資料分析",
+    "schedule": "時間地點：L406 星期一 11,12,13 節（18:30~21:00）",
+    "class": "資研二A (BBE)社群運算與巨量資料分析 選修3學分",
+    "lecture": {
+        "title": "教材：",
+        "baseUrl": "assets/1081/R",
+        "items": [
+            {
+                "url": "CH00.7z",
+                "target" : "_blank",
+                "name": "R 簡介"
+            },
+            {
+                "url": "CH01.7z",
+                "target" : "_blank",
+                "name": "R 基礎"
+            },
+            {
+                "url": "CH02.7z",
+                "target" : "_blank",
+                "name": "資料讀寫"
+            },
+            {
+                "url": "CH03.7z",
+                "target" : "_blank",
+                "name": "流程控制與使用者自訂函式"
+            },
+            {
+                "url": "CH04.7z",
+                "target" : "_blank",
+                "name": "繪圖功能與基本統計"
+            },
+            {
+                "url": "CH05.7z",
+                "target" : "_blank",
+                "name": "相關套件介紹"
+            },
+            {
+                "url": "CH06.7z",
+                "target" : "_blank",
+                "name": "監督式學習"
+            },
+            {
+                "url": "CH07.7z",
+                "target" : "_blank",
+                "name": "非監督式學習"
+            },
+            {
+                "url": "CH08.7z",
+                "target" : "_blank",
+                "name": "演化式學習"
+            },
+            {
+                "url": "CH09.7z",
+                "target" : "_blank",
+                "name": "混合式學習"
+            },
+            {
+                "url": "CH10.7z",
+                "target" : "_blank",
+                "name": "關聯式規則"
+            },
+            {
+                "url": "Shiny.7z",
+                "target" : "_blank",
+                "name": "Shiny 簡介"
+            },
+            {
+                "url": "CH11.7z",
+                "target" : "_blank",
+                "name": "用 R 爬網頁"
+            }
+        ]
+    },
+    "assignment": {
+    },
+    "quiz": {
+        "title": "",
+        "baseUrl": "",
+        "items": [  ]
+    }
+}
