@@ -1,5 +1,5 @@
 {
-    "semaster": "1081",
+    "semaster": "1091",
     "courseId": "rstat",
     "courseNo": "BBE-219300",
     "courseName": "社群運算與巨量資料分析",
@@ -7,7 +7,7 @@
     "class": "資研二A (BBE)社群運算與巨量資料分析 選修3學分",
     "lecture": {
         "title": "教材：",
-        "baseUrl": "assets/1081/R",
+        "baseUrl": "assets/1091/R",
         "items": [
             {
                 "url": "CH00.7z",
