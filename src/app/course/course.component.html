@@ -14,6 +14,15 @@
         </li>
       </ul>
     </div>
+    <div class="col-md-12" *ngIf="courseData['example']">
+      <h6>{{ courseData['example']['title'] }}</h6>
+      <ul>
+        <li *ngFor="let item of courseData['example']['items']">
+          <a href="{{ item['fullUrl'] }}" target="{{ item['target'] }}" *ngIf="item['fullUrl']; else plainExampleItemBlock">{{ item['name'] }}</a>
+          <ng-template #plainExampleItemBlock>{{ item['name'] }}</ng-template>
+        </li>
+      </ul>
+    </div>
     <div class="col-md-12" *ngIf="courseData['assignment']">
       <h6>{{ courseData['assignment']['title'] }}</h6>
       <ul>

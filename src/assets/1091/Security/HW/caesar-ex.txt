@@ -1,0 +1,24 @@
+如果你能夠看到這一段訊息，就表示你已經解碼成功了。
+請填寫下列資訊：
+
+學號：
+姓名：
+
+然後將這個檔案另存新檔，檔案名稱為 plaintext.txt，接著以下列指令進行加密：
+
+encrypt.exe -k 7 plaintext.txt ciphertext.txt
+
+最後將 ciphertext.txt 當作電子郵件的附件，寄給鄧姚文老師，
+收件地址是 josephdeng@g2.usc.edu.tw
+來信請註明「繳交資訊安全第一次作業」以及寄件人的學號姓名。
+
+以下僅供娛樂：
+For weeks a six-year old lad kept telling his first-grade teacher about the baby brother or sister that was expected at his house.
+One day the mother allowed the boy to feel the movements of the unborn child.
+The six-year old was obviously impressed.
+But made no comment.
+Furthermore, he stopped telling his teacher about the impending event.
+The teacher finally sat the boy on her lap and said:
+Tommy, whatever has become of that baby brother or sister you were expecting at home.
+Tommy burst into tears and confessed:
+I think mommy ate it!

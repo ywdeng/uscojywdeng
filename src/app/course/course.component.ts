@@ -30,7 +30,7 @@ export class CourseComponent implements OnInit {
   }
 
   prepareData(data): void {
-    let idx = ["lecture", "assignment", "quiz"];
+    let idx = ["lecture", "example", "assignment", "quiz"];
     idx.forEach(subj => {
       if (data[subj] && data[subj]["items"]) {
         data[subj]["items"].forEach(item => {

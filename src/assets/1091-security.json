@@ -11,31 +11,56 @@
         "items": [
             {
                 "url": "00-introduction.pptx",
-                "target" : "_blank",
+                "target": "_blank",
                 "name": "課程簡介"
             },
             {
                 "url": "CH01/01-overview.pptx",
-                "target" : "_blank",
+                "target": "_blank",
                 "name": "Overview 資訊安全概述"
             },
             {
                 "url": "CH02/02-CryptographicTools.pptx",
-                "target" : "_blank",
+                "target": "_blank",
                 "name": "Cryptographic Tools 密碼學工具"
+            }
+        ]
+    },
+    "example": {
+        "title": "補充資料：",
+        "baseUrl": "assets/1091/Security",
+        "items": [
+            {
+                "url": "SRC/genpwd.7z",
+                "target": "_blank",
+                "name": "暴力法密碼產生器"
+            },
+            {
+                "url": "SRC/Caesar-Cipher-Simple.7z",
+                "target": "_blank",
+                "name": "Caesar Cipher 範例"
+            },
+            {
+                "url": "SRC/Caesar-Cipher.7z",
+                "target": "_blank",
+                "name": "Caesar Cipher 實用板（能夠處理中文字）"
             }
         ]
     },
     "assignment": {
         "title": "習題：",
-        "baseUrl": "assets/1082/Security",
+        "baseUrl": "assets/1091/Security",
         "items": [
+            {
+                "url": "HW/caesar-cipher.txt",
+                "target": "_blank",
+                "name": "第二章 習題#1 Caesar Cipher"
+            }
         ]
     },
     "quiz": {
         "title": "考試：",
-        "baseUrl": "assets/1082/Security",
-        "items": [
-        ]
+        "baseUrl": "assets/1091/Security",
+        "items": []
     }
 }
