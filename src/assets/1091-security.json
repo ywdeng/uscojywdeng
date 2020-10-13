@@ -36,6 +36,11 @@
                 "name": "暴力法密碼產生器"
             },
             {
+                "url": "SRC/password_crack.py",
+                "target": "_blank",
+                "name": "暴力法破解密碼所需時間"
+            },
+            {
                 "url": "SRC/Caesar-Cipher-Simple.7z",
                 "target": "_blank",
                 "name": "Caesar Cipher 範例"
@@ -44,6 +49,16 @@
                 "url": "SRC/Caesar-Cipher.7z",
                 "target": "_blank",
                 "name": "Caesar Cipher 實用板（能夠處理中文字）"
+            },
+            {
+                "url": "SRC/OTP.7z",
+                "target": "_blank",
+                "name": "One-Time Password 範例"
+            },
+            {
+                "url": "CH02/TheAdventureOfTheDancingMen.pdf",
+                "target": "_blank",
+                "name": "The Adventure of the Dancing Men"
             }
         ]
     },
