@@ -6,11 +6,26 @@
 
 然後將這個檔案另存新檔，檔案名稱為 plaintext.txt，接著以下列指令進行加密：
 
-encrypt.exe -k 7 plaintext.txt ciphertext.txt
+encrypt.exe -k 31 plaintext.txt ciphertext.txt
 
-最後將 ciphertext.txt 當作電子郵件的附件，寄給鄧姚文老師，
+最後將 ciphertext.txt 當作成果繳回 TronClass。
+
+評分方式：
+同學繳交作業後，老師以下列指令檢查成果：
+
+decrypt.exe -k 31 ciphertext.txt
+
+如果能夠成功解密並且看到正確的學號與姓名，就有成績，不能解密或者學號或姓名不正確就沒有成績。
+成績高低依完成作業的先後順序遞減，第一個完成作業者100分，
+2020-10-19前完成作業者95分，
+2020-10-20前完成作業者85分，
+2020-10-21前完成作業者75分，
+2020-10-22前完成作業者65分，
+
+逾期者無法在 TronClass 上繳交作業，可以將 ciphertext.txt 當作電子郵件的附件，補交給鄧姚文老師，
 收件地址是 josephdeng@g2.usc.edu.tw
 來信請註明「繳交資訊安全第一次作業」以及寄件人的學號姓名。
+逾期補交者 60 分。
 
 以下僅供娛樂：
 For weeks a six-year old lad kept telling his first-grade teacher about the baby brother or sister that was expected at his house.
