@@ -23,6 +23,11 @@
                 "url": "CH02/02-CryptographicTools.pptx",
                 "target": "_blank",
                 "name": "Cryptographic Tools 密碼學工具"
+            },
+            {
+                "url": "CH03/03-UserAuthentication.pptx",
+                "target": "_blank",
+                "name": "User Authentication 使用者身份驗證"
             }
         ]
     },
@@ -59,6 +64,11 @@
                 "url": "CH02/TheAdventureOfTheDancingMen.pdf",
                 "target": "_blank",
                 "name": "The Adventure of the Dancing Men"
+            },
+            {
+                "url": "SRC/pseudo-random.7z",
+                "target": "_blank",
+                "name": "Pseudo Random Number Generator 範例"
             }
         ]
     },
