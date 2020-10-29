@@ -86,16 +86,26 @@
             }
         ]
     },
+    "example": {
+        "title": "補充資料：",
+        "baseUrl": "assets/1091/ProjectManagement",
+        "items": [
+            {
+                "url": "CH05/ProjectChangeRequestForm.pdf",
+                "target": "_blank",
+                "name": "An Example Project Change Request Form"
+            }
+		]
+    },
     "assignment": {
         "title": "習題：",
         "baseUrl": "assets/1091/ProjectManagement",
         "items": [
-        ]
-    },
-    "quiz": {
-        "title": "考試：",
-        "baseUrl": "assets/1091/ProjectManagement",
-        "items": [
+			{
+                "url": "Quiz-01-ch1-ch4-ans.pdf",
+                "target": "_blank",
+                "name": "第一章～第四章 複習題"
+            }
         ]
     }
 }

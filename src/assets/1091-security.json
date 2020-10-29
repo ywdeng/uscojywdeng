@@ -28,6 +28,11 @@
                 "url": "CH03/03-UserAuthentication.pptx",
                 "target": "_blank",
                 "name": "User Authentication 使用者身份驗證"
+            },
+            {
+                "url": "CH04/04-AccessControl.pptx",
+                "target": "_blank",
+                "name": "Access Control 存取控制"
             }
         ]
     },
