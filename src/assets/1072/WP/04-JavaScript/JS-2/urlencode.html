@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>URL Request 分解</title>
+    <style>
+        table {
+            margin: 1em;
+        }
+
+        th {
+            vertical-align: text-top;
+        }
+
+        td {
+            vertical-align: text-top;
+            padding-right: 1em;
+        }
+
+        .message {
+            color: blue;
+        }
+
+        input[type="text"],
+        input[type="url"] {
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        function encode() {
+            result.innerHTML = "&nbsp;";
+            var plain = document.getElementById("url").value;
+            if (plain.length < 1) return;
+            var cipher = encodeURI(plain);
+            var count = 0;
+            for (var n = 1; n <= 5; n++) {
+                var key = document.getElementById("key" + n).value;
+                var value = document.getElementById("value" + n).value;
+                if ((key.trim().length > 0) && (value.trim().length > 0)) {
+                    var sep = (0 == count++) ? "?" : "&";
+                    plain += sep + key + "=" + value;
+                    cipher += sep + encodeURIComponent(key) + "=" + encodeURIComponent(value);
+                }
+            }
+            result.innerHTML = "<h4>URI明碼: <span class='message'>" + plain + "</span></h4>"
+                + "<h4>URI編碼: <span class='message'>" + cipher + "</span></h4>";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>URL Request 編碼</h1>
+    <hr />
+    <table style="width:42em">
+        <tr>
+            <th>URL:</th>
+            <td><input type="url" id="url" placeholder="請輸入網址" required></td>
+            <td><input type="button" onclick="encode()" value="編碼"></td>
+        </tr>
+        <tr>
+            <th>參數:</th>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <th>參數名稱</th>
+                        <th>參數值</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="key1" placeholder="參數1名稱"></td>
+                        <td><input type="text" id="value1" placeholder="參數1的值"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="key2" placeholder="參數2名稱"></td>
+                        <td><input type="text" id="value2" placeholder="參數2的值"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="key3" placeholder="參數3名稱"></td>
+                        <td><input type="text" id="value3" placeholder="參數3的值"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="key4" placeholder="參數4名稱"></td>
+                        <td><input type="text" id="value4" placeholder="參數4的值"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="key5" placeholder="參數5名稱"></td>
+                        <td><input type="text" id="value5" placeholder="參數5的值"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div id="result"></div>
+</body>
+
+</html>

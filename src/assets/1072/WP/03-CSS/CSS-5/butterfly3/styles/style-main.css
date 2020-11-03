@@ -1,0 +1,129 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+body {
+	margin: 0;
+	font-family: '微軟正黑體', 'Helvetica', 'Arial', sans-serif;
+}
+
+header, nav {
+	text-align: center;
+}
+
+a {
+	padding: 0 1em;
+	text-align: center;
+	text-decoration: none;
+	background: white;
+	border: 1px transparent;
+	color: hsl(0, 0%, 5%);
+	transition: all .2s;
+}
+
+a:focus, a:hover {
+	margin: -5px 5px 5px -5px;
+	box-shadow: 5px 5px 0px 0px hsla(0, 0%, 80%, .8);
+}
+
+ul {
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+.main-menu {
+	text-align: right;
+	border-right: thick solid black;
+	margin-right: 1em;
+}
+
+.main-menu li {
+	margin-bottom: 0.5em;
+}
+
+.cards {
+	background-color: hsl(0, 0%, 90%);
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+.card-title {
+	color: blue;
+	font-size: larger;
+	display: inline;
+}
+
+.card-subtitle {
+	color: red;
+	display: inline;
+}
+
+.card-image {
+	width: 500px;
+}
+
+.desc-head {
+	margin-bottom: 0;
+}
+
+.desc {
+	margin-top: 0;
+}
+
+/*--------------------------------------------------------------
+Grids:
+--------------------------------------------------------------*/
+
+.site {
+	display: grid;
+	grid-template-rows: 6em auto;
+	grid-template-columns: 12em auto;
+}
+
+.banner {
+	grid-column: 1/3;
+	grid-row: 1/2;
+}
+
+.main-menu {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+.cards {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	display: grid;
+	grid-template-areas: "card";
+}
+
+.card {
+	grid-area: card;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 550px auto;
+	grid-template-rows: 3em auto;
+	justify-items: center;
+}
+
+.card-header {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	justify-self: start;
+}
+
+.card-image {
+	grid-column: 1/2;
+	grid-row: 1/3;
+}
+
+.card-body {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	justify-self: start;
+	padding-right: 2em;
+}

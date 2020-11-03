@@ -1,0 +1,56 @@
+extends layout
+
+block content
+  article(style=(postback ? 'background-color: rgb(190, 181, 224)' : ''))
+    header  
+      h1 第三屆軟體專案管理營
+      - if (postback)
+        h2 報名確認
+      - else 
+        h2 線上報名
+    form#form1(action='/' method="post")
+      table#table1
+        tr
+          th 帳號：
+          td 
+            input#theAccount(type="text" name="theAccount" maxlength="12" required autofocus value=theAccount, readonly=postback)
+          th 姓名：
+          td 
+            input#userName(type="text" name="userName" maxlength="50" required autocomplete="off" value=userName, readonly=postback)
+        tr
+          th 密碼：
+          td 
+            input#thePassword(type="password" name="thePassword" placeholder="請輸入密碼" title="密碼至少8個字元，須包含大小寫英文字母以及數字。" required value=thePassword, readonly=postback)
+          th 確認密碼：
+          td 
+            input#confirmPassword(type="password" name="confirmPassword" placeholder="請再次輸入密碼" maxlength="50" required value=confirmPassword, readonly=postback)
+        tr
+          th 聯絡電話：
+          td 
+            input#telNumber(type="tel" name="telNumber" maxlength="30" value=telNumber, readonly=postback)
+          th 手機號碼：
+          td 
+            input#mobileNumber(type="tel" name="mobileNumber" maxlength="30" value=mobileNumber, readonly=postback)
+        tr 
+          th 聯絡地址：
+          td(colspan="3")
+            textarea#contactAddress(name="contactAddress" cols="80" rows="4" readonly=postback)=contactAddress
+        tr 
+          th 電子郵件：
+          td(colspan="3")
+            input#emailAddress(type="email" name="emailAddress" size="80" maxlength="100" required value=emailAddress, readonly=postback)
+        tr 
+          th 個人網站：
+          td(colspan="3")
+            input#homepageUrl(type="url" name="homepageUrl" size="80" maxlength="100" value=homepageUrl, readonly=postback)
+      - if (postback)
+        tr
+          td(colspan="4")
+            .center
+              input(type="image" src="/images/home.png" alt="回首頁" title="回首頁" onclick="goHome()")
+      - else
+        tr
+          td(colspan="4")
+            .center
+              input(type="image" src="/images/send-email.png" alt="提交" title="送出表單" onclick="return validateInput()")              
+              input(type="image" src="/images/reset-orange.png" alt="清除" title="重新填報" onclick="resetForm()")

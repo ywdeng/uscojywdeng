@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>URL Request 分解</title>
+    <style>
+        table {
+            margin: 1em;
+        }
+
+        td,
+        th {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>URL Request 分解</h1>
+    <hr />
+    <script>
+        var cipher = prompt("請輸入 URL Request 測試資料：", "");
+        document.writeln("<p>輸入：" + cipher + "</p>");
+        if (cipher && (cipher.trim().length > 1)) {
+            if (cipher.indexOf("?") > 0) {
+                var tokens = cipher.split("?");
+                document.writeln("<p>URL解碼後：" + decodeURI(tokens[0]) + "</p>");
+                // document.writeln("Query String：" + tokens[1]);
+                tokens = tokens[1].split("&");
+                var tbody = "";
+                for (var tok in tokens) {
+                    var pairs = tokens[tok].split("=");
+                    tbody += "<tr><th>" + (parseInt(tok) + 1) + "</th><td>" + decodeURIComponent(pairs[0]) + "</td><td>"
+                        + (pairs.length > 1 ? decodeURIComponent(pairs[1]) : "&nbsp;") + "</td></tr>";
+                }
+                if (tbody.length > 0) {
+                    document.writeln("<table border='1'><tr><th>序號</th><th>參數名稱</th><th>參數值</th></tr>"
+                        + tbody + "</table>");
+                }
+            } else {
+                document.writeln("<p>URL解碼後：" + decodeURI(cipher) + "</p>");
+            }
+        }
+    </script>
+</body>
+
+</html>

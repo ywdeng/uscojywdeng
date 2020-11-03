@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>訂閱電子報</title>
+<style>
+section { margin: 1em 10%; }
+</style>
+<script>
+function defaultFocus() {
+	document.getElementById("UserName").focus();
+}
+</script>
+</head>
+<body onLoad='defaultFocus()'>
+<section>
+  <header>
+    <hr><h2> 訂閱電子報</h2><hr>
+  </header>
+  <p></p>免費訂閱產業相關消息與研討會訊息， 請輸入您的姓名與電子郵件：</p>
+  <form action="/register.aspx">
+    <table border="0">
+      <tr>
+        <td><label for="UserName">姓名： </label></td>
+        <td><input type="text" id="UserName" name="txtName" required></td>
+      </tr>
+      <tr>
+        <td><label for="UserEmail">電郵： </label></td>
+        <td><input type="email" id="UserEmail" name="txtEmail" required></td>
+      </tr>
+      <tr>      
+        <td>&nbsp;</td><td><input type="submit" /></td>
+    </table>
+  </form>
+</section>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>訂閱電子報</title>
+  <style>
+    section {
+      margin: 1em 10%;
+    }
+  </style>
+  <script>
+    function defaultFocus() {
+      document.getElementById("userName").focus();
+    }
+  </script>
+</head>
+
+<body onLoad='defaultFocus()'>
+  <section>
+    <header>
+      <hr>
+      <h2>訂閱電子報</h2>
+      <hr>
+    </header>
+    <p>免費訂閱產業相關消息與研討會訊息， 請輸入您的姓名與電子郵件：</p>
+    <form action="/subscribe" method="get">
+      <table border="0">
+        <tr>
+          <td><label for="userName">姓名： </label></td>
+          <td><input type="text" id="userName" name="userName" required></td>
+        </tr>
+        <tr>
+          <td><label for="userEmail">電郵： </label></td>
+          <td><input type="email" id="userEmail" name="userEmail" required></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><input type="submit" /></td>
+      </table>
+    </form>
+  </section>
+</body>
+
+</html>

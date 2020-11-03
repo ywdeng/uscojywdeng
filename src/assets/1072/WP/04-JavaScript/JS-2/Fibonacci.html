@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>Fibonacci</title>
+  <script>
+    function fib(n) {
+      if (n < 2) return n;
+      return fib(n - 1) + fib(n - 2);
+    }
+    function calc(nitem) {
+      var fn = fib(nitem.value);
+      document.getElementById("fn").innerText = fn;
+    }
+  </script>
+</head>
+<body>
+  <h1>費氏數列</h1>
+  <hr>
+  費氏數列第
+  <input type="number" onchange="calc(this)" value="1" min="1" step="1" 
+    style="width:50px;text-align:center;">
+  項 = <span id="fn">1</span>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="dice.css" />
+	<script src="dice.js"></script>
+	<title>骰子遊戲：雙人捌豆仔</title>
+</head>
+
+<body>
+	<article id="wrapper">
+		<h1>骰子遊戲：雙人拾捌豆仔</h1>
+		<hr />
+		<section id="secUserInfo">
+			<table id="userInfo" border="0">
+				<tr class="blueText">
+					<th>藍方：</th>
+					<td><input type="text" id="blueName" /></td>
+					<td rowspan="2"><input name="btnPlay" type="button" id="btnPlay" value="開始" onClick="playGame()" />
+					</td>
+				</tr>
+				<tr class="redText">
+					<th>紅方：</th>
+					<td><input type="text" id="redName" /></td>
+				</tr>
+			</table>
+		</section>
+		<section id="secBoard">
+			<input type="button" id="btnDraw" onclick="play()">
+			<table border="0">
+				<tr>
+					<td><img id="dice1" src="images/question.jpg" /></td>
+					<td><img id="dice2" src="images/question.jpg" /></td>
+					<td><img id="dice3" src="images/question.jpg" /></td>
+					<td><img id="dice4" src="images/question.jpg" /></td>
+				</tr>
+			</table>
+		</section>
+		<div id="logger"></div>
+		<div id="gameStat"></div>
+		<aside>
+			<hr />
+			<h2>計點方式：</h2>
+			<ul>
+				<li>先扣除2顆點數相同的骰子，其餘2顆點數合計即為其所得點數。</li>
+				<li>若有兩組骰子點數相同，則以點數較大者之合計為其所得點數。</li>
+				<li>若有3顆骰子相同且另一顆不同，必須重擲。</li>
+				<li>若所擲骰子正面均不相同，稱為「無面」或「無點」，應重新擲至有點數為止。</li>
+				<li>若四顆骰子正面均相同，稱為「一色」或「豹子」，不論點數多寡，均以勝計。</li>
+			</ul>
+			參考：<a href="https://zh.wikipedia.org/wiki/%E5%8D%81%E5%85%AB%E4%BB%94" target="_blank">維基百科</a>
+		</section>
+	</aside>
+</body>
+<script language="javascript">
+	dice1 = document.getElementById("dice1");
+	dice2 = document.getElementById("dice2");
+	dice3 = document.getElementById("dice3");
+	dice4 = document.getElementById("dice4");
+	matrix = [dice1, dice2, dice3, dice4];
+	secUserInfo = document.getElementById("secUserInfo");
+	blueName = document.getElementById("blueName");
+	redName = document.getElementById("redName");
+	btnPlay = document.getElementById("btnPlay");
+	btnDraw = document.getElementById("btnDraw");
+	secBoard = document.getElementById("secBoard");
+	logger = document.getElementById("logger");
+	state = 0;
+	switchState();
+</script>
+
+</html>

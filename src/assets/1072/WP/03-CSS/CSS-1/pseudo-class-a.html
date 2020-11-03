@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pseudo Class</title>
+<style>
+/* 不想讓人家知道還沒點過 
+a:link { color: red; }
+a:visited { color: red; } 
+a:hover { color: blue; } 
+*/ 
+
+/* 移除底線，加大顯眼 */
+a:link {
+	color: red;
+	text-decoration: none;
+}
+a:visited {
+	color: red;
+	text-decoration: none;
+}
+a:hover {
+	color: blue;
+	font-size:xx-large;
+}
+
+</style>
+</head>
+
+<body>
+<div class="hello-example"> 
+    <a href="http://example.com">English:</a> 
+    <span lang="en-us en-gb en-au en-nz">Hello World!</span> 
+</div>
+<div class="hello-example"> 
+    <a href="#portuguese">Portuguese:</a> 
+    <span lang="pt">Olá Mundo!</span> 
+</div>
+<div class="hello-example"> 
+    <a href="http://example.cn">Chinese (Simplified):</a> 
+    <span lang="zh-CN">世界您好！</span> 
+</div>
+<div class="hello-example"> 
+    <a href="http://example.tw">Chinese (Traditional):</a> 
+    <span lang="zh-TW">世界您好！</span> 
+</div>
+<div class="hello-example"> 
+    <a href="http://example.jp">Japanese:</a> 
+    <span lang="jp">こんにちは世界!</span> 
+</div>
+</body>
+</html>

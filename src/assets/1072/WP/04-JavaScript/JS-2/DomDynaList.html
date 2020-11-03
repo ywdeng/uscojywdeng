@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM 動態生成元件</title>
+    <script>
+        function focusInput() {
+            var optid = document.getElementById("optid");
+            optid.select();
+            optid.focus();
+        }
+        function getInput() {
+            var optid = document.getElementById("optid");
+            var idtext = optid.value.trim();
+            if (idtext.length < 1) {
+                focusInput();
+                return false;
+            }
+            return idtext;
+        }
+        function addElement() {
+            var optid = getInput();
+            if (!optid) rerturn;
+            var mylist = document.getElementById("mylist");
+            var opt = document.createElement("option");
+            opt.value = opt.text = opt.id = optid;
+            mylist.appendChild(opt);
+            mylist.size = mylist.getElementsByTagName("option").length;
+            mylist.selectedIndex = mylist.size - 1;
+            focusInput();
+        }
+        function deleteElement() {
+            var optid = getInput();
+            if (!optid) rerturn;
+            var opt = document.getElementById(optid);
+            if (!opt) rerturn;
+            var mylist = document.getElementById("mylist");
+            mylist.removeChild(opt);
+            mylist.size = mylist.getElementsByTagName("option").length;
+            focusInput();
+        }
+        function setInput() {
+            var mylist = document.getElementById("mylist");
+            var optid = document.getElementById("optid");
+            optid.value = mylist.options[mylist.selectedIndex].id;
+            focusInput();
+        }
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1>DOM 動態生成元件</h1>
+        <hr />
+        清單項目：
+        <input type="text" id="optid" autofocus>
+        <input type="button" value="增加" onclick="addElement()">
+        <input type="button" value="刪除" onclick="deleteElement()">
+        <hr />
+        <select id="mylist" onchange="setInput()">
+            <option id="選項1">選項1</option>
+        </select>
+    </article>
+</body>
+
+</html>

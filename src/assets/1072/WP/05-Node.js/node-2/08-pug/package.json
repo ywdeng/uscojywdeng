@@ -1,0 +1,16 @@
+{
+  "name": "08-pug",
+  "version": "1.0.0",
+  "description": "A Example for PUG",
+  "main": "index.js",
+  "scripts": {
+    "test": "set DEBUG=08-pug:* & nodemon index.js"
+  },
+  "author": "ywdeng",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.19.0",
+    "pug": "^2.0.3"
+  }
+}

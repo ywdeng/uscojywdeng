@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Index</title>
+    <style type="text/css">
+        .BlueDiv {
+            background-color: Navy;
+            color: White;
+            width: 200px;
+        }
+
+        .RedDiv {
+            background-color: Red;
+            color: White;
+            width: 200px;
+        }
+
+        .style1 {
+            width: 100%;
+        }
+
+        .evenRow {
+            background-color: lavender;
+            color: black;
+        }
+
+        .oddRow {
+            background-color: firebrick;
+            color: floralwhite;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bolder;
+        }
+    </style>
+    <script src="/scripts/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            init();
+            answer();
+        });
+        function answer() {
+            $('#banner').on('mouseenter mousemove mouseup mousedown', function (e) {
+                $('#AnswerSheet').html("Mouse Position: (" + e.pageX + "," + e.pageY + ")");
+                $(this).css("cursor", "pointer");
+                if (e.type == 'mousedown' || e.type == "mouseup") {
+                    $('#AnswerSheet').toggleClass("highlight");
+                }
+            });
+            $('#banner').on('mouseleave', function(e) {
+                $('#AnswerSheet').html("&nbsp");
+            });
+        }
+        function enflateTable() {
+            var trs = "";
+            for (var y = 1; y < 6; y++) {
+                trs += "<tr>";
+                for (var x = 1; x < 4; x++)
+                    trs += "<td>Cell " + x + " Row " + y + "</td>";
+                trs += "</tr>"
+            }
+            $('#DataTable tr:first').before(trs);
+        }
+        function init() {
+            enflateTable();
+            $('#SubmitButton').click(function (e) {
+                var ans = $('#FirstNameTextBox').val() + " " +
+                    $('#LastNameTextBox').val() + " from " +
+                    $('#selOrigin :selected').text() + " says<br />\n" +
+                    $('#CommentsTextBox').val();
+                $('#AnswerSheet').html(ans).show().fadeOut(3000);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="TestDiv" title="YOU SHOULD CHANGE THIS!">
+        This is my div text
+    </div>
+    <div title="A TABLE IS WHERE FOR YOU">
+        <table id="DataTable" border="1">
+            <tr>
+                <td colspan="3">
+                    <table style="width:100%" title="HERE YOU HAVE A TABLE IN ANOTHER">
+                        <tr>
+                            <td>Nested Table Cell and Row</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="RedDiv" id="spacer" title="A YOUNG PARAGRAPH">&nbsp;</p>
+    <div class="BlueDiv">
+        <span>Blue div</span>
+    </div>
+    <p>
+        <span class="BlueDiv">This is my blue span</span>
+    </p>
+    <div class="RedDiv">
+        <span>Red div</span>
+    </div>
+    <p>
+        <img id="banner" src="/images/logonew4.png" width="800" title="Banner of your department" />
+    </p>
+    <form id="form1" action="#">
+        <table style="width:300px;" id="contact">
+            <tr>
+                <td style="width:30%;">First Name</td>
+                <td style="width:70%;">
+                    <input id="FirstNameTextBox" type="text" title="YOUR FIRST NAME" value="Joseph" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input id="LastNameTextBox" type="text" title="Your surname" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td><textarea rows="5" cols="60" id="CommentsTextBox">批評的話不要多</textarea></td>
+            </tr>
+            <tr>
+                <td>Origin</td>
+                <td>
+                    <select id="selOrigin" title="Select a country">
+                        <option value="AU">Australia</option>
+                        <option value="BR">Brazil</option>
+                        <option value="CA">Canada</option>
+                        <option value="DE">Germany</option>
+                        <option value="ES">Spain</option>
+                        <option value="FR">France</option>
+                        <option value="GU">Guam</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="IL">Israel</option>
+                        <option value="JP">Japan</option>
+                        <option value="KR">Republic of Korea</option>
+                        <option value="LA">Laos</option>
+                        <option value="MO">Macao</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="OM">Oman</option>
+                        <option value="PH">Philippines</option>
+                        <option value="QA">Qatar</option>
+                        <option value="RU">Russia</option>
+                        <option value="SG">Singapore</option>
+                        <option value="TW" selected="true">Taiwan</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="WS">Samoa</option>
+                        <option value="YT">Mayote</option>
+                        <option value="ZA">South Africa</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input id="SubmitButton" type="button" value="送出" title="Button Yours" />
+                </td>
+            </tr>
+        </table>
+        <div id="AnswerSheet"></div>
+    </form>
+</body>
+
+</html>

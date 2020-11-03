@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>取絕對值</title>
+</head>
+<body>
+    <script>
+        function abs(n) {
+            return (n < 0) ? -1 * n : n;
+        }
+        
+        var num = 0;
+        do {
+            num = prompt("請輸入數字：", "0");
+            if (num && num != 'null') {
+                alert("您輸入的數字絕對值是：" + abs(parseFloat(num)));
+                break;
+            }
+        } while (true);
+    </script>
+</body>
+</html>

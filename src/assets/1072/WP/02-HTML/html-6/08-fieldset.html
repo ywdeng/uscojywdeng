@@ -1,0 +1,166 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>第三屆軟體專案管理營</title>
+<style>
+article { margin: 1em 10%; padding: 1em; background-color: #FFC; }
+header { text-align: center; }
+table { margin: 0 auto; }
+tr { vertical-align: top; }
+th { text-align: right; }
+</style>
+<script>
+function showFieldSet(fsName) {
+	var fs = document.getElementById(fsName);
+	fs.disabled = false;
+	fs.style.display = "block";
+}
+function hideFieldSet(fsName) {
+	var fs = document.getElementById(fsName);
+	fs.disabled = true; // 若不 disable 則必填欄位過不了關
+	fs.style.display = "none";
+}
+function switchType(type) {
+	if (type == "student") {
+		showFieldSet("StudentInfo");
+		hideFieldSet("TeacherInfo");
+		hideFieldSet("NoneAcademicInfo");
+	} else if (type == "teacher") {
+		hideFieldSet("StudentInfo");
+		showFieldSet("TeacherInfo");
+		hideFieldSet("NoneAcademicInfo");
+	} else {
+		hideFieldSet("StudentInfo");
+		hideFieldSet("TeacherInfo");
+		showFieldSet("NoneAcademicInfo");
+	}
+}
+function validateInput() {
+	var p1 = document.getElementById("txtPassword1");
+	var p2 = document.getElementById("txtPassword2");
+	if (p1.value != p2.value) {
+		alert("密碼輸入不一致！");
+		p1.select();
+		p1.focus();
+		p2.value = "";
+		return;
+	}
+	var f = document.getElementById("f1");
+	f.submit();
+}
+</script>
+</head>
+<body>
+<article>
+  <header>
+    <h1>第三屆軟體專案管理營</h1>
+    <h2>線上報名</h2>
+    <hr>
+  </header>
+  <form id="f1" action="/Register.aspx" method="post">
+    <fieldset id="personal">
+      <legend>個人基本資料</legend>
+      <table border="0">
+        <tr>
+          <th>姓名：</th>
+          <td>
+            <input type="text" name="txtName"  id="txtName" size="40" required>
+          </td>
+          <th>性別：</th>
+          <td>
+            <input type="radio" name="rdoSex" id="rdoSexMale" value="male">
+            <label for="rdoSexMale">男</label>
+            <input type="radio" name="rdoSex" id="rdoSexFemale" value="female" checked>
+            <label for="rdoSexFemale">女</label></td>
+        </tr>
+        <tr>
+          <th>電子郵件：</th>
+          <td colspan="3">
+            <input type="email" name="txtEmail" id="txtEmail" size="100" required>
+          </td>
+        </tr>
+        <tr>
+          <th>密碼：</th>
+          <td>
+            <input type="password" name="txtPassword1" id="txtPassword1" size="40" required>
+          </td>
+          <th>確認密碼：</th>
+          <td>
+            <input type="password" name="txtPassword2" id="txtPassword2" size="40" required>
+          </td>
+        </tr>
+        <tr>
+          <th>聯絡電話：</th>
+          <td><input name="txtTel" type="tel" id="txtTel" size="40"></td>
+          <th>手機：</th>
+          <td><input name="txtMobile" type="tel" id="txtMobile" size="40"></td>
+        </tr>
+        <tr>
+          <th>聯絡地址：</th>
+          <td colspan="3">
+            <textarea name="txtAddress" cols="80" rows="4" id="txtAddress"></textarea>
+          </td>
+        <tr>
+        <tr>
+          <th>身份別：</th>
+          <td colspan="3">
+            <input type="radio" name="rdoType" id="typeStudent" value="student" checked 
+            	onClick="switchType('student')">
+            <label for="typeStudent">學生</label>
+            <input type="radio" name="rdoType" id="typeTeacher" value="teacher" 
+            	onClick="switchType('teacher')">
+            <label for="typeTeacher">教師</label>
+            <input type="radio" name="rdoType" id="typeNoneAcademic" value="none" 
+            	onClick="switchType('none')">
+            <label for="typeNoneAcademic">社會人士</label></td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset id="StudentInfo">
+      <legend>學生資訊</legend>
+      <table border="0">
+        <tr>
+          <th>就讀學校：</th>
+          <td><input type="text" name="txtStudentSchool" size="40" required></td>
+          <th>主修科系：</th>
+          <td><input type="text" name="txtStudentMajor" size="40" required></td>
+        </tr>
+        <tr>
+          <th>年級班級：</th>
+          <td><input type="text" name="txtStudentGrade" size="40"></td>
+          <th>學號：</th>
+          <td><input type="text" name="txtStudentId" size="40"></td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset id="TeacherInfo" disabled style="display:none">
+      <legend>教師資訊</legend>
+      <table border="0">
+        <tr>
+          <th>任教學校：</th>
+          <td><input type="text" name="txtTeacherSchool" size="40" required></td>
+          <th>任教科系：</th>
+          <td><input type="text" name="txtTeacherDepartment" size="40" required></td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset id="NoneAcademicInfo" disabled style="display:none">
+      <legend>社會人士資訊</legend>
+      <table border="0">
+        <tr>
+          <th>任職公司：</th>
+          <td><input type="text" name="txtCompany" size="40"></td>
+          <th>工作職稱：</th>
+          <td><input type="text" name="txtTitle" size="40"></td>
+        </tr>
+      </table>
+    </fieldset>
+    <div style="text-align:center">
+	  <input type="button" onClick="validateInput()" value="送出">
+      <input type="reset" />
+    </div>
+  </form>
+</article>
+</body>
+</html>

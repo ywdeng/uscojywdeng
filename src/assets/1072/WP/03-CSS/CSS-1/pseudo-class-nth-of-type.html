@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pseudo Class</title>
+<style>
+/* parent > immediate child 
+section > p {
+	color: blue;
+}
+*/
+/* previous + immediate_follow 
+p.dofu + p {
+	color: blue;
+}
+*/
+/* previous ~ follow 
+p.dofu ~ p {
+	color: blue;
+}
+*/
+/*
+hr.first {
+	width: 50%;
+}
+hr.last {
+	color: #f00;
+	background-color: #f00;
+	height: 5px;
+}
+hr:not(.last) {
+	color: #0f0;
+	background-color: #0f0;
+	height: 6px;
+}
+*/
+</style>
+</head>
+
+<body>
+<section>
+  <h1>杜甫《短歌行贈王郎司直》</h1>
+  <!-- <hr width="200px" class="first"> -->
+  <p class='dofu'>王郎酒酣拔劍斫地歌莫哀</p>
+  <p class='dofu'>我能拔爾抑塞磊落之奇才</p>
+  <!-- <hr width="200px" class="second"> -->
+  <p class='dofu'>豫章翻風白日動</p>
+  <p class='dofu'>鯨魚跋浪滄溟開</p>
+  <p class='dofu'>且說佩劍休裴回</p>
+  <p class='dofu'>西得諸侯棹錦水</p>
+  <p class='dofu'>欲向何門趿珠履</p>
+  <p class='dofu'>仲宣樓頭春色深</p>
+  <p class='dofu'>青眼高歌望吾子</p>
+  <p class='dofu'>眼中之人吾老矣</p>
+  <!-- <hr width="200px" class="last"> -->
+</section>
+</body>
+</html>

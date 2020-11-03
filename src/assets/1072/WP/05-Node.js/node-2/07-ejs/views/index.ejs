@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <style>
+        body {
+            width: 95%;
+            margin: 1em auto;
+            <% if (isMale) { %>
+            background-color: beige;
+            <% } else { %>
+                background-color: pink;                
+            <% } %>
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><%= title %></h1>
+    <hr>
+    你好，<%= userName %> <%= appellation %> 歡迎光臨！
+</body>
+
+</html>

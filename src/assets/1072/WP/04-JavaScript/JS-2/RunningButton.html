@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>打賭你點不到我</title>
+	<script>
+		var WIDTH = 400;
+		var HEIGHT = 200;
+		var INC = 100;
+		var x = 0;
+		var y = 0;
+		function init() {
+			window.resizeTo(WIDTH, HEIGHT);
+			window.moveTo(x, y);
+		}
+		function run() {
+			var xx = Math.random();
+			var yy = Math.random();
+			if (xx >= 0.5) {
+				x += INC;
+				if ((x + WIDTH) > screen.width) x = 0;
+			} else {
+				x -= INC;
+				if (x < 0) x = 200;
+			}
+			if (yy >= 0.5) {
+				y += INC;
+				if ((y + HEIGHT) > screen.height) y = 0;
+			} else {
+				y -= INC;
+				if (y < 0) y = 100;
+			}
+			window.moveTo(x, y);
+			if (Math.random() > 0.5) {
+				window.resizeTo(WIDTH, HEIGHT);
+			}
+		}
+		function gotMe() {
+			var ans = prompt("厲害，被你抓到了！\n再試一次?(Yes/No)", "Yes");
+			if ("YES" == ans.toUpperCase()) {
+				return;
+			} else if ("NO" == ans.toUpperCase()) {
+				window.close();
+			} else {
+				if (confirm("看不懂你寫 " + ans + " 是什麼意思？\n要關掉視窗嗎？")) {
+					window.close();
+				}
+			}
+		}
+	</script>
+</head>
+
+<body onLoad="init()" style="background-color:red; color:#F2F3F4">
+	<div align="center">
+		<h1>打賭你點不到我!</h1>
+		<input type="button" value="點不到我!" onclick="gotMe()" onmouseover="run()">
+	</div>
+</body>
+
+</html>

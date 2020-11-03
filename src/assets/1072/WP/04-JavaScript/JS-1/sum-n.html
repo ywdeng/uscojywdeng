@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>累加1到n的結果</title>
+</head>
+<body>
+<script>
+var n = 10;
+do {
+	n = prompt("請輸入累加目標:", '10');
+} while (!n);
+var sum = 1;
+var eqn = "1";
+for (var i = 2; i <= n; i++) {
+	sum += i;	
+	eqn += "+" + i;
+}
+document.write(eqn + "=" + sum);
+</script>
+</body>
+</html>

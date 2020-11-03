@@ -1,0 +1,22 @@
+#content {
+    margin: 0px auto;
+    padding: 1em;
+    background-color: transparent;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#poetry {
+    padding: 1em;
+    font-size:larger;
+}
+
+body {
+    background-image: url('./images/rose-02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}

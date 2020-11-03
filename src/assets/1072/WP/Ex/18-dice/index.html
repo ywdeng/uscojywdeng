@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>十八豆仔</title>
+  <link rel="stylesheet" href="18-dice.css">
+  <script src="18-dice.js"></script>
+</head>
+
+<body>
+  <article id="main">
+    <header id="banner">
+      <h1>十八豆仔</h1>
+      <hr />
+    </header>
+    <section id="playground">
+      <table id="bowl">
+        <tr>
+          <th><img id="dice1" src="images/dice-w-6.png"></th>
+          <th><img id="dice2" src="images/dice-w-6.png"></th>
+          <th><img id="dice3" src="images/dice-w-6.png"></th>
+          <th><img id="dice4" src="images/dice-w-6.png"></th>
+        </tr>
+      </table>
+      <h4 id="showScore">請擲骰</h4>
+      <input type="button" value="擲骰" width="10em" id="btnRoll" onclick="rollDice()">
+    </section>
+    <section id="description">
+      <h2>遊戲規則</h2>
+      <ul>
+        <li>參與者有莊家一人及閒家數人。</li>
+        <li>每局開玩前，閒家先各自下注於自己面前。接著由莊家先擲骰子，再依序由各閒家逐一擲骰子，以所得點數大小與莊家分勝負。</li>
+        <li>計點方式係先扣除2顆點數相同的骰子，其餘2顆點數合計即為其所得點數。 若有兩組骰子點數相同，則以點數較大者之合計為其所得點數。有3顆骰子相同且另一顆不同，也必須重擲。
+          <ul>
+            <li>所得點數最大為12點，稱為「十八」（si̍p-pat）；最小為3點，稱為「扁膣」(發音類似BG)。</li>
+            <li>若四顆骰子正面均相同，稱為「一色」（外省人稱豹子），不論點數多寡，均以勝計。</li>
+            <li>若所擲骰子正面均不相同，稱為「無面」或「無點」，應重新擲至有點數為止。</li>
+          </ul>
+        </li>
+      </ul>
+      <p>詳見 <a href="https://zh.wikipedia.org/wiki/%E5%8D%81%E5%85%AB%E4%BB%94" target="_blank">維基百科 - 十八仔</a></p>
+    </section>
+  </article>
+</body>
+
+</html>

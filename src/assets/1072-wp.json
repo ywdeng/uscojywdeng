@@ -1,0 +1,261 @@
+{
+    "semaster": "1072",
+    "courseId": "wp1072",
+    "courseNo": "P45-130700",
+    "courseName": "網際網路程式設計",
+    "schedule": "時間地點：N501 星期五 6,7,8,9 節（13:10~17:00）",
+    "class": "日資二甲 (P45)網際網路程式設計 專必3學分",
+    "lecture": {
+        "title": "教材：",
+        "baseUrl": "assets/1072/WP",
+        "items": [
+            {
+                "url": "00-Intro/intro.pptx",
+                "target": "_blank",
+                "name": "00 課程簡介"
+            },
+            {
+                "url": "01-Overview/ch01.pptx",
+                "target": "_blank",
+                "name": "01 網頁設計概論 Introduction to Web Design"
+            },
+            {
+                "url": "02-HTML/html-1.pptx",
+                "target": "_blank",
+                "name": "02 HTML 文字排版 Document Structure and Text Formatting"
+            },
+            {
+                "url": "02-HTML/html-2_hyperlink.pptx",
+                "target": "_blank",
+                "name": "03 HTML 超連結 Hyperlink"
+            },
+            {
+                "url": "02-HTML/html-3_image.pptx",
+                "target": "_blank",
+                "name": "04 HTML 影像與圖片 Images"
+            },
+            {
+                "url": "02-HTML/html-4_video.pptx",
+                "target": "_blank",
+                "name": "05 HTML 影音媒體 Video and Audio"
+            },
+            {
+                "url": "02-HTML/html-5_table.pptx",
+                "target": "_blank",
+                "name": "06 HTML 表格 Tables"
+            },
+            {
+                "url": "02-HTML/html-6_form.pptx",
+                "target": "_blank",
+                "name": "07 HTML 表單 Forms"
+            },
+            {
+                "url": "03-CSS/CSS-1.pptx",
+                "target": "_blank",
+                "name": "08 CSS樣式表 Cascade Style Sheet"
+            },
+            {
+                "url": "03-CSS/CSS-2-text.pptx",
+                "target": "_blank",
+                "name": "09 以CSS設定文字格式 Cascade Style Sheet Text Styling"
+            },
+            {
+                "url": "03-CSS/CSS-3-fgbg.pptx",
+                "target": "_blank",
+                "name": "10 以CSS設定顏色與背景 Foreground and Background Colors, Textures and Images"
+            },
+            {
+                "url": "03-CSS/CSS-4-box.pptx",
+                "target": "_blank",
+                "name": "11 CSS盒子模型與定位方式 The Box Model and Position"
+            },
+            {
+                "url": "03-CSS/CSS-5-grid.pptx",
+                "target": "_blank",
+                "name": "12 CSS格線佈局 Page Layout with Grid"
+            },
+            {
+                "url": "04-JavaScript/js-1-intro.pptx",
+                "target": "_blank",
+                "name": "13 JavaScript簡介-第一講 Introduction to JavaScript-Part 1"
+            },
+            {
+                "url": "04-JavaScript/js-2-function.pptx",
+                "target": "_blank",
+                "name": "14 JavaScript簡介-第二講 Introduction to JavaScript-Part 2"
+            },
+                        {
+                "url": "05-Node.js/node-1-intro.pptx",
+                "target": "_blank",
+                "name": "15 Node.js簡介 Introduction to Node.js"
+            },
+            {
+                "url": "05-Node.js/node-2-express.pptx",
+                "target": "_blank",
+                "name": "16 Node.js+Express Handling http Request-Response"
+            },
+            {
+                "url": "05-Node.js/node-3-mvc.pptx",
+                "target": "_blank",
+                "name": "17 Node.js+Express MVC"
+            },
+            {
+                "url": "05-Node.js/node-4-auth.pptx",
+                "target": "_blank",
+                "name": "18 Node.js+Express Authentication, Authorization and Session Management"
+            },
+            {
+                "url": "05-Node.js/node-4-aws.pptx",
+                "target": "_blank",
+                "name": "19 在 AWS EC2 部署 Node.js App"
+            },
+            {
+                "url": "05-Node.js/node-5-db.pptx",
+                "target": "_blank",
+                "name": "20 Node.js+Express Using Databases"
+            },
+            {
+                "url": "05-Node.js/node-5-aws.pptx",
+                "target": "_blank",
+                "name": "21 在 AWS EC2 部署 Node.js App 使用 MariaDB"
+            },
+            {
+                "url": "06-jQuery/jquery-1-intro.pptx",
+                "target": "_blank",
+                "name": "22 jQuery簡介 Introduction to jQuery"
+            }
+        ]
+    },
+    "example": {
+        "title": "隨堂練習材料：",
+        "baseUrl": "assets/1072/WP",
+        "items": [
+            {
+                "url": "01-Overview/ex01-01.7z",
+                "target": "_blank",
+                "name": "01 網頁設計概論，範例1：製作一個 HTML 網頁"
+            },
+            {
+                "url": "02-HTML/html-1.7z",
+                "target": "_blank",
+                "name": "02 HTML 文字排版 Document Structure and Text Formatting"
+            },
+            {
+                "url": "02-HTML/html-2.7z",
+                "target": "_blank",
+                "name": "03 HTML 超連結 Hyperlink"
+            },
+            {
+                "url": "02-HTML/html-3.7z",
+                "target": "_blank",
+                "name": "04 HTML 影像與圖片 Images"
+            },
+            {
+                "url": "02-HTML/html-4.7z",
+                "target": "_blank",
+                "name": "05 HTML 影音媒體 Video and Audio"
+            },
+            {
+                "url": "02-HTML/html-5.7z",
+                "target": "_blank",
+                "name": "06 HTML 表格 Tables"
+            },
+            {
+                "url": "02-HTML/html-6.7z",
+                "target": "_blank",
+                "name": "07 HTML 表單 Forms"
+            },
+            {
+                "url": "03-CSS/CSS-1.7z",
+                "target": "_blank",
+                "name": "08 CSS樣式表"
+            },
+            {
+                "url": "03-CSS/CSS-2.7z",
+                "target": "_blank",
+                "name": "09 以CSS設定文字格式"
+            },
+            {
+                "url": "03-CSS/CSS-3.7z",
+                "target": "_blank",
+                "name": "10 以CSS設定顏色與背景"
+            },
+            {
+                "url": "03-CSS/CSS-4.7z",
+                "target": "_blank",
+                "name": "11 CSS盒子模型與定位方式"
+            },
+            {
+                "url": "03-CSS/CSS-5.7z",
+                "target": "_blank",
+                "name": "12 CSS格線佈局"
+            },
+            {
+                "url": "04-JavaScript/JS-1.7z",
+                "target": "_blank",
+                "name": "13 JavaScript簡介-第一講"
+            },
+            {
+                "url": "04-JavaScript/JS-2.7z",
+                "target": "_blank",
+                "name": "14 JavaScript簡介-第二講"
+            },
+                        {
+                "url": "05-Node.js/node-1.7z",
+                "target": "_blank",
+                "name": "15 Node.js簡介"
+            },
+            {
+                "url": "05-Node.js/node-2.7z",
+                "target": "_blank",
+                "name": "16 Node.js+Express Handling http Request-Response"
+            },
+            {
+                "url": "05-Node.js/node-3.7z",
+                "target": "_blank",
+                "name": "17 Node.js+Express MVC"
+            },
+            {
+                "url": "05-Node.js/node-4.7z",
+                "target": "_blank",
+                "name": "18 Node.js+Express Authentication, Authorization and Session Management"
+            },
+            {
+                "url": "05-Node.js/node-4.7z",
+                "target": "_blank",
+                "name": "19 在 AWS EC2 部署 Node.js App"
+            },
+            {
+                "url": "05-Node.js/node-5.7z",
+                "target": "_blank",
+                "name": "20 Node.js+Express Using Databases"
+            },
+            {
+                "url": "05-Node.js/node-5.7z",
+                "target": "_blank",
+                "name": "21 在 AWS EC2 部署 Node.js App 使用 MariaDB"
+            },
+            {
+                "url": "06-jQuery/jQuery-1.7z",
+                "target": "_blank",
+                "name": "22 jQuery簡介 Introduction to jQuery"
+            }
+        ]
+    },
+    "assignment": {
+        "title": "範例：",
+        "baseUrl": "assets/1072/WP",
+        "items": [
+            {
+                "url": "Ex/18-dice/index.html",
+                "target": "_blank",
+                "name": "擲骰子遊戲"
+            },
+            {
+                "url": "Ex/tic-tac-toe/index.html",
+                "target": "_blank",
+                "name": "井字遊戲"
+            }
+        ]
+    }
+}

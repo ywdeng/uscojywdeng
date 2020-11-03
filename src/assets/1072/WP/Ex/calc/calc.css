@@ -1,0 +1,40 @@
+td {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+input[type=button] {
+    background-color: #4CAF50;
+    border: white solid thick;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 0px;
+    cursor: pointer;
+    font-size: large;
+    width: 100%;
+}
+
+input[type=button]:hover {
+    background-color: #5CBF60;
+    color: black;
+    font-size: larger;
+  }
+  
+input[type=button]:disabled {
+    background-color: #99999999;
+    color: #0C6F10;
+}
+
+input[type=text] {
+    background-color: #121212;
+    border: silver solid thick;
+    color: white;
+    padding: 16px 18px;
+    text-align: right;
+    margin: 0px;
+    cursor: none;
+    font-size: x-large;
+    width: 90%;
+}

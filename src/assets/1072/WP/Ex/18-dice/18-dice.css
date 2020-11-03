@@ -1,0 +1,29 @@
+article#main {
+    background-color: azure;
+    width: 75%;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+header#banner {
+    padding: 1em;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+table#bowl {
+    margin: 1em auto;
+}
+
+section#playground {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+input#btnRoll {
+    padding: 4px;
+    width: 200px;    
+    font-size: x-large;
+}

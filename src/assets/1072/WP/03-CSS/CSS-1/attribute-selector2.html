@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>屬性選擇器</title>
+<style type="text/css">
+/* All spans with a "lang" attribute are bold */
+span[lang] {
+	font-weight: bold;
+}
+/* All spans in Portuguese are green */
+span[lang="pt"] {
+	color: green;
+}
+/* All spans in US English are blue  */
+span[lang~="en-us"] {
+	color: orange;
+}
+/* Any span in Chinese is red, matches simplified (zh-CN) or traditional (zh-TW) */
+span[lang|="zh"] {
+	color: red;
+}
+/* All internal links have a gold background */
+a[href^="#"] {
+	background-color: gold
+}
+/* All links to urls ending in ".cn" are red */
+a[href$=".cn"] {
+	color: red;
+}
+a[href$=".tw"] {
+	color: blue;
+}
+/* All links to with "example" in the url have a grey background */
+a[href*="example"] {
+	background-color: #CCCCCC;
+}
+</style>
+</head>
+<body>
+<div class="hello-example"> <a href="http://example.com">English:</a> <span lang="en-us en-gb en-au en-nz">Hello World!</span> </div>
+<div class="hello-example"> <a href="#portuguese">Portuguese:</a> <span lang="pt">Olá Mundo!</span> </div>
+<div class="hello-example"> <a href="http://example.cn">Chinese (Simplified):</a> <span lang="zh-CN">世界您好！</span> </div>
+<div class="hello-example"> <a href="http://example.tw">Chinese (Traditional):</a> <span lang="zh-TW">世界您好！</span> </div>
+<div class="hello-example"> <a href="http://example.jp">Japanese:</a> <span lang="jp">こんにちは世界!</span> </div>
+</body>
+</html>

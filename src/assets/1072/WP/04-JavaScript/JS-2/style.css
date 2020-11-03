@@ -1,0 +1,9 @@
+article {
+      width: 40em;
+      margin: 12px auto;
+      background-color: #FFC;
+      padding: 0px 24px 24px 24px;
+      text-align: center;
+      border: lightgray solid thin;
+      box-shadow: 8px 8px gray;
+    }

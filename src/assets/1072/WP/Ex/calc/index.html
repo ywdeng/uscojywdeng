@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>簡易計算機</title>
+  <link rel="stylesheet" href="calc.css">
+  <script src="calc.js"></script>
+</head>
+
+<body onload="init()">
+  <div align="center">
+    <h1>簡易計算機</h1>
+    <hr>
+    <table border="0">
+      <form id="f1" action="#" method="post">
+        <tr>
+          <td colspan="6" >
+            <div id="disp">QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ</div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="6"><input type="text" id="incoming" value="0"></td>
+        </tr>
+        <tr>
+          <td><input type="button" id="num9" value="9" onClick="setNumber(9)"></td>
+          <td><input type="button" id="num8" value="8" onClick="setNumber(8)"></td>
+          <td><input type="button" id="num7" value="7" onClick="setNumber(7)"></td>
+          <td><input type="button" id="num6" value="6" onClick="setNumber(6)"></td>
+          <td><input type="button" id="num5" value="5" onClick="setNumber(5)"></td>
+          <td><input type="button" id="num4" value="4" onClick="setNumber(4)"></td>
+        </tr>
+        <tr>
+          <td><input type="button" id="num3" value="3" onClick="setNumber(3)"></td>
+          <td><input type="button" id="num2" value="2" onClick="setNumber(2)"></td>
+          <td><input type="button" id="num1" value="1" onClick="setNumber(1)"></td>
+          <td><input type="button" id="num0" value="0" onClick="setNumber(0)"></td>
+          <td><input type="button" id="LP" value="(" onClick="setOperator('(')"></td>
+          <td><input type="button" id="RP" value=")" onClick="setOperator(')')" disabled="disabled"></td>
+        </tr>
+        <tr>
+          <td><input type="button" id="periof" value="&period;" onClick="setNumber('.')"></td>
+          <td><input type="button" id="add" value="&plus;" onClick="setOperator('+')"></td>
+          <td><input type="button" id="sub" value="&minus;" onClick="setOperator('-')"></td>
+          <td><input type="button" id="mul" value="&times;" onClick="setOperator('*')"></td>
+          <td><input type="button" id="div" value="&divide;" onClick="setOperator('/')"></td>
+          <td><input type="button" id="equals" value="&equals;" onClick="calc()" disabled="disabled"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="button" id="BS" value="&leftarrow;" onClick="backspace()"></td>
+          <td colspan="2"><input type="button" id="C" value="C" onClick="resetCurrent()"></td>
+          <td colspan="2"><input type="button" value="AC" id="AC" onClick="resetAll()"></td>
+        </tr>
+      </form>
+    </table>
+  </div>
+  <hr />
+  <h4>&nbsp;</h4>
+</body>
+
+</html>

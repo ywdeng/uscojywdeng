@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>評定等第</title>
+</head>
+<body>
+	<script>
+		var x = prompt("請輸入學期成績", "");
+		x = Math.floor(x / 10); // 無條件捨去
+		switch (x) {
+			case 10: case 9:
+				alert("優等！");
+				break;
+			case 8:
+				alert("甲等！");
+				break;
+			case 7:
+				alert("乙等！");
+				break;
+			case 6:
+				alert("丙等！");
+				break;
+			default:
+				alert("不及格！");
+		}
+	</script>
+</body>
+</html>

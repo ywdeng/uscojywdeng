@@ -1,0 +1,137 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>第三屆軟體專案管理營</title>
+<style>
+article { margin: 1em 10%; padding: 1em; background-color: #FFC; }
+table { margin: 0 auto; }
+header { text-align: center; }
+tr { vertical-align: top; }
+th { text-align: right; }
+td { text-align:left; }
+</style>
+</head>
+<body>
+<article>
+  <header>
+    <h1>第三屆軟體專案管理營</h1>
+    <h2>線上報名</h2>
+    <hr>
+  </header>
+  <form id="f1" action="/Register.aspx" method="post" enctype="multipart/form-data">
+    <table border="0">
+      <tr>
+        <th>姓名：</th>
+        <td colspan="3">
+		  <input type="text" name="txtName"  id="txtName" required>
+		</td>
+      </tr>
+      <tr>
+        <th>電子郵件：</th>
+        <td colspan="3"><div>
+		  <input type="email" name="txtEmail" id="txtEmail" style="width:100%" required>
+          </div>
+		</td>
+      </tr>
+      <tr>
+        <th>密碼：</th>
+        <td>
+		  <input type="password" name="txtPassword1" id="txtPassword1" required>
+		</td>
+        <th>確認密碼：</th>
+        <td>
+		  <input type="password" name="txtPassword2" id="txtPassword2" required>
+		</td>
+      </tr>
+      <tr>
+        <th>個人網站：</th>
+        <td colspan="3">
+		  <input type="url" name="txtHomepage" id="txtHomepage" style="width:100%">
+		</td>
+      </tr>
+      <tr>
+        <th>出生日期：</th>
+        <td>
+		  <input type="date" name="txtBirthDate" id="txtBirthDate">
+		</td>
+        <th>性別：</th>
+        <td>
+		  <input type="radio" name="rdoSex" value="male">
+          男
+          <input type="radio" name="rdoSex" value="female" checked>
+          女 
+		</td>
+      </tr>
+      <tr>
+        <th>工作內容：</th>
+        <td colspan="3">
+		  <input type="checkbox" name="cboWork_coding" value="on">
+          撰寫程式
+          <input type="checkbox" name="cboWork_art" value="on">
+          美工設計
+          <input type="checkbox" name="cboWork_webedt" value="on">
+          製作網頁
+          <input type="checkbox" name="cboWork_dba" value="on">
+          資料庫管理 
+		</td>
+      </tr>
+      <tr>
+        <th>聯絡地址：</th>
+        <td colspan="3">
+		  <textarea name="txtAddress" rows="4" id="txtAddress" 
+			style="width:100%"></textarea>
+		</td>
+      </tr>
+      <tr>
+        <th>最喜歡的顏色？</th>
+        <td>
+		  <input type="color" name="txtFavoriteColor" required>
+		</td>
+        <th>大頭照：</th>
+        <td>
+		  <input type="file" name="txtPicture" required>
+		</td>
+      </tr>
+      <tr>
+        <th>聯絡電話：</th>
+        <td>
+		  <input name="txtTel" type="tel" id="txtTel">
+		</td>
+        <th>每日上網時數：</th>
+        <td>
+		  <input name="txtWebHour" type="number" id="txtWebHour" 
+		    min="0" max="24" value="1">
+		</td>
+      </tr>
+      <tr>
+        <th>最喜歡的入口網站：</th>
+        <td><select name="selSearchEngine">
+            <option>Google</option>
+            <option>Yahoo</option>
+            <option>MSN</option>
+            <option>MSDN</option>
+            <option>CNET</option>
+          </select>
+		</td>
+        <th>學過的程式語言：</th>
+        <td><select name="selLanguage" size="3" multiple>
+            <option>C</option>
+            <option>JAVA</option>
+            <option>C#</option>
+            <option>VB</option>
+            <option>Python</option>
+          </select>
+		</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center">
+		  <input type="submit">
+          <input type="reset">
+		</td>
+      </tr>
+    </table>
+  </form>
+</article>
+</body>
+</html>

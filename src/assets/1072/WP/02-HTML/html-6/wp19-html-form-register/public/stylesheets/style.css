@@ -1,0 +1,32 @@
+article {
+  margin: 1em;
+  padding: 1em;
+  background-color: #FFC;
+}
+
+header {
+  text-align: center;
+}
+
+tr {
+  vertical-align: top;
+  padding-bottom: 1em;
+}
+
+th {
+  text-align: right;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+input[type='button'], input[type='submit'], input[type='reset'] {
+  width: 8em;
+  padding: 4px;
+}
+
+#main {
+  margin: 1em auto;
+  width: 800px;
+}

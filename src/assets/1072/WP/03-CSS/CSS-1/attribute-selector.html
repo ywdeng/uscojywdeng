@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>屬性選擇器</title>
+<style>
+a[title] {
+	text-align: center;
+}
+a[title~='大學'] {
+	text-align: left;
+}
+a[title='實踐大學'] {
+	text-align: right;
+}
+</style>
+</head>
+<body>
+<article>
+  <nav>
+    <table border="1" width="100%">
+      <tr>
+        <td><a href="http://www.ywdeng.idv.tw" title="鄧老師首頁">鄧老師</a></td>
+        <td><a href="http://www.usc.edu.tw" title="實踐大學首頁">實踐大學</a></td>
+        <td><a href="http://www.cust.edu.tw" title="中華科技大學首頁">中華科大</a></td>
+        <td><a href="http://www.im.usc.edu.tw" title="實踐資管首頁">實踐資管</a></td>
+        <td><a href="http://csiecc.cust.edu.tw" title="中華資工首頁">中華資工</a></td>
+      </tr>
+    </table>
+  </nav>
+</article>
+</body>
+</html>

@@ -1,0 +1,4 @@
+﻿文字左右對齊
+DEP 與 EVP
+為了避免駭客或病毒程式故意傳送大量資料給特定程式, 『塞爆』該程式用來儲存資料的記憶體區塊, 導致系統不正常運作, 於是軟硬體業發展出防禦機制。這種機制在 Intel 稱為【NX】(No eXecute, 不執行), 在微軟稱為【DEP】（Data Execution Prevention, 資料執行防止）, 在 AMD 則稱為【EVP】（Enhanced Virus Protection）。 </article>
+

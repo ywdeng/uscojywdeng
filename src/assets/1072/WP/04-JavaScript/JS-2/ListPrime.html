@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>列出範圍內的質數</title>
+  <script src="prime.js"></script>
+</head>
+<body>
+  <script>
+    var ans = 0;
+    do {
+      ans = prompt("列出範圍內的質數，請輸入兩個正整數：", "");
+      if (ans && ans != 'null') {
+        var nums = ans.split(/[\s:,]+/);
+        if (nums.length == 2) {
+          var left = parseInt(nums[0]);
+          var right = parseInt(nums[1]);
+          document.write("<p>介於 " + left + " 和 " + 
+                            right + " 之間的質數：</p>");
+          document.write(listPrime(left, right).join(","));
+          break;
+        }
+      }
+    } while (true);
+  </script>
+</body>
+</html>

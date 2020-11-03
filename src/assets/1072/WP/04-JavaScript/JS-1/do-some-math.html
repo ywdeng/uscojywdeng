@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>簡單四則運算</title>
+	<script>
+		function doCalc() {
+			var num1 = document.getElementById("num1");
+			var op = document.getElementById("op");
+			var num2 = document.getElementById("num2");
+			var result = document.getElementById("result");
+			if (op.selectedIndex == 0) {
+				result.value = 
+                    Number(num1.value) + Number(num2.value);
+			} else if (op.selectedIndex == 1) {
+				result.value = num1.value - num2.value;
+			} else if (op.selectedIndex == 2) {
+				result.value = num1.value * num2.value;
+			} else if (op.selectedIndex == 3) {
+				result.value = num1.value / num2.value;
+			}
+		}
+	</script>
+	<style>
+		body {
+			background-color: #FFC;
+		}
+		article {
+			margin: 1em auto;
+			width: 32em;
+		}
+		header {
+			text-align: center;
+		}
+		section {
+			padding: 1em;
+		}
+		.rightAlign {
+			text-align: right;
+		}
+		.narrow {
+			width: 10ex;
+		}
+	</style>
+</head>
+<body>
+<article>
+    <header>
+        <h1>簡單四則運算</h1>
+        <hr />
+    </header>
+    <section id="input">
+        <input type="number" id="num1" value="1" 
+            class="narrow rightAlign">
+        <select id="op">
+            <option value="+" selected>&plus;</option>
+            <option value="-">&minus;</option>
+            <option value="*">&times;</option>
+            <option value="/">&divide;</option>
+        </select>
+        <input type="number" id="num2" value="1" 
+            class="narrow rightAlign">
+        &equals;
+        <input type="text" id="result" value="2" readonly 
+            class="rightAlign">
+        <input type="button" onclick="doCalc()" value="計算">
+    </section>
+</article>
+</body>
+</html>

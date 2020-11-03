@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>判斷質數</title>
+  <script src="prime.js"></script>
+</head>
+<body>
+  <script>
+    var ans = 0;
+    do {
+      ans = prompt("請輸入正整數：", "");
+      if (ans && ans != 'null') {
+        var num = parseInt(ans);
+        if (isPrime(num)) {
+          alert(num + " 是質數");
+        } else {
+          alert(num + " 不是質數");
+        }
+        break;
+      }
+    } while (true);
+  </script>>
+</body>
+</html>

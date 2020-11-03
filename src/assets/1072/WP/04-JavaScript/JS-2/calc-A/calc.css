@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'digital-clock-font';
+    src: url('digital-7.ttf');
+}
+
+#disp {
+    display: block;
+    width: 95%;
+    height: 1.4em;
+    line-height: 1.4em;
+    padding: 2px;
+    margin: 2px auto;
+    text-align: right;
+    border: thick solid silver;
+    border-style: inset;
+    background-color: black;
+    color: #98FB98;
+    font-family: 'digital-clock-font', 'Orbitron', sans-serif;
+    font-size: x-large;
+}
+
+article {
+    margin: 1em 10%;
+    padding: 6px;
+    text-align: center;
+    background-color: #FFC;
+}
+
+table {
+    margin: 1em auto;
+    width: 20em;
+}
+
+td {
+    margin: 2px;
+    padding: 2px;
+}
+
+td input {
+    width: 100%;
+}
+
+input[type="button"] {
+    padding: 4px;
+}
+
+input[type="button"]:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}

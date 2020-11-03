@@ -1,0 +1,14 @@
+{
+  "name": "test-mariadb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-mariadb.js",
+  "scripts": {
+    "test": "node test-mariadb.js"
+  },
+  "author": "ywdeng",
+  "license": "ISC",
+  "dependencies": {
+    "mariadb": "^2.0.5"
+  }
+}

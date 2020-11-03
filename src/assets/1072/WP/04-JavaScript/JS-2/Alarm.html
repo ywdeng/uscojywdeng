@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style>
+		.flushLeft {
+			text-align: left;
+		}
+
+		.flushRight {
+			text-align: right;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		input[type='number'] {
+			text-align: right;
+			width: 6em;
+		}
+
+		#map1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10;
+		}
+
+		#alarm1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 5;
+		}
+
+		#t1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 20;
+		}
+	</style>
+	<script type="text/javascript">
+		var mapLeft = 0;	// the left margin of the map, x-coor of the map
+
+		function init() {
+			var m = document.getElementById("map1");
+			var a = document.getElementById("alarm1");
+			var t = document.getElementById("t1");
+			// align the map to the center of the browser client area
+			mapLeft = (document.documentElement.clientWidth - m.width) / 2;
+			if (!(mapLeft > 0)) mapLeft = 0; // in case of old browser does not have clientWidth
+			var x = mapLeft + "px";
+			var y = m.height + "px";
+			m.style.left = x;
+			a.style.left = x;
+			t.style.left = x;
+			t.style.top = y;
+		}
+		function setAlarm() {
+			var a = document.getElementById("alarm1");
+			var x = document.getElementById("xcoord");
+			var y = document.getElementById("ycoord");
+			var s = document.getElementById("select1");
+			a.style.top = y.value + "px";
+			var xc = parseInt(x.value) + mapLeft;
+			a.style.left = xc + "px";
+			a.style.zIndex = 100;
+			var lamp = s.options[s.selectedIndex].value;
+			a.src = "images/" + lamp;
+			//return false;
+		}
+		function clearAlarm() {
+			var a = document.getElementById("alarm1");
+			a.style.zIndex = 1;
+		}
+
+		document.onmousemove = mouseMove;
+		function showMoveCoord(ev) {
+			var mx = document.getElementById("mouseX");
+			var my = document.getElementById("mouseY");
+			mx.innerHTML = ev.clientX;
+			my.innerHTML = ev.clientY;
+		}
+		function mouseMove(ev) {
+			showMoveCoord(ev);
+		}
+		function allowDrop(ev) {
+			ev.preventDefault();
+			showMoveCoord(ev);
+		}
+		function drop(ev) {
+			ev.preventDefault();
+			var ax = document.getElementById("xcoord");
+			var ay = document.getElementById("ycoord");
+			ax.value = ev.clientX - mapLeft;
+			ay.value = ev.clientY;
+			setAlarm();
+		}
+	</script>
+	<title>範例：警戒區域標示</title>
+</head>
+
+<body onLoad="init()" onResize="init()">
+	<div class="center" id="m1">
+		<img id="map1" src="images/down-town.jpg" ondrop="drop(event)" ondragover="allowDrop(event)" />
+		<img id="alarm1" src="images/lampRed.gif" draggable="true" />
+		<form id="f1" action="#">
+			<table border="0" id="t1">
+				<tr>
+					<th>X 座標：</th>
+					<td><input type="number" id="xcoord" value="220" min="0" /></td>
+					<td>&nbsp;</td>
+					<th>Y 座標：</th>
+					<td><input type="number" id="ycoord" value="300" min="0" /></td>
+					<td>&nbsp;</td>
+					<th>燈號種類：</th>
+					<td><select id="select1">
+							<option value="lampBlue.gif">藍燈</option>
+							<option value="lampGreen.gif">綠燈</option>
+							<option value="lampYellow.gif">黃燈</option>
+							<option value="lampPink.gif">粉紅燈</option>
+							<option value="lampRed.gif" selected="selected">紅燈</option>
+						</select></td>
+					<td><input type="button" id="btnGo" value="警示" onClick="setAlarm()" />
+						<input type="button" id="btnClear" value="取消警示" onclick="clearAlarm()" /></td>
+					<td>&nbsp;</td>
+					<td>目前滑鼠位置: (<span id='mouseX'>0</span>, <span id='mouseY'>0</span>)</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="tic-tac-toe.css" />
+<script src="tic-tac-toe.js"></script>
+<title>井字遊戲</title>
+</head>
+
+<body>
+<article id="wrapper">
+  <h1>井字遊戲</h1>
+  <hr />
+  <section id="secUserInfo">
+    <table id="userInfo" border="1">
+      <tr class="blueText">
+        <th>藍方：</th>
+        <td><input type="text" id="blueName" /></td>
+        <td rowspan="2"><input name="btnPlay" type="button" id="btnPlay" value="開始" onClick="playGame()" /></td>
+      </tr>
+      <tr class="redText">
+        <th>紅方：</th>
+        <td><input type="text" id="redName" /></td>
+      </tr>
+    </table>
+  </section>
+  <section id="secBoard">
+  <div id="turn"></div>
+    <table border="1">
+      <tr>
+        <td><input name="btn00" type="button" class="squareButton" id="btn00" onClick="play(this)" /></td>
+        <td><input name="btn01" type="button" class="squareButton" id="btn01" onClick="play(this)" /></td>
+        <td><input name="btn02" type="button" class="squareButton" id="btn02" onClick="play(this)" /></td>
+      </tr>
+      <tr>
+        <td><input name="btn10" type="button" class="squareButton" id="btn10" onClick="play(this)" /></td>
+        <td><input name="btn11" type="button" class="squareButton" id="btn11" onClick="play(this)" /></td>
+        <td><input name="btn12" type="button" class="squareButton" id="btn12" onClick="play(this)" /></td>
+      </tr>
+      <tr>
+        <td><input name="btn20" type="button" class="squareButton" id="btn20" onClick="play(this)" /></td>
+        <td><input name="btn21" type="button" class="squareButton" id="btn21" onClick="play(this)" /></td>
+        <td><input name="btn22" type="button" class="squareButton" id="btn22" onClick="play(this)" /></td>
+      </tr>
+    </table>
+  </section>
+  <div id="logger"></div>
+  <div id="gameStat"></div>
+</article>
+</body>
+<script>
+btn00 = document.getElementById("btn00");
+btn01 = document.getElementById("btn01");
+btn02 = document.getElementById("btn02");
+btn10 = document.getElementById("btn10");
+btn11 = document.getElementById("btn11");
+btn12 = document.getElementById("btn12");
+btn20 = document.getElementById("btn20");
+btn21 = document.getElementById("btn21");
+btn22 = document.getElementById("btn22");
+matrix = [[btn00,btn01,btn02],[btn10,btn11,btn12],[btn20,btn21,btn22]];
+secUserInfo = document.getElementById("secUserInfo");
+blueName = document.getElementById("blueName");
+redName = document.getElementById("redName");
+btnPlay = document.getElementById("btnPlay");
+secBoard = document.getElementById("secBoard");
+logger = document.getElementById("logger");
+state = 0;
+switchState();
+</script>
+</html>

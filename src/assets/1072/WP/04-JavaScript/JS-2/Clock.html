@@ -1,0 +1,48 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>電子鐘</title>
+	<style>
+		td {
+			font-size: 9px;
+			border-style: solid;
+			border-width: thin;
+			text-align: center;
+		}
+
+		table {
+			border-style: solid;
+			border-width: medium;
+		}
+
+		#clock {
+			display: block;
+			float: right;
+		}
+	</style>
+	<script>
+		function padLeft(tok, pad = '0', len = 2) {
+			return tok.toString().padStart(2, '0');
+		}
+		function showClock() {
+			var d = new Date();
+			document.getElementById("clock").innerHTML = "<table><tr><td>" +
+				d.getFullYear() + "-" + padLeft(d.getMonth() + 1) + "-" + padLeft(d.getDate()) +
+				"</td></tr><tr><td>" +
+				padLeft(d.getHours()) + ":" + padLeft(d.getMinutes()) + ":" + padLeft(d.getSeconds()) +
+				"</td></tr></table>";
+			setTimeout("showClock()", 500);
+		}
+	</script>
+</head>
+
+<body onload="showClock()">
+	<h1 align="center">電子鐘</h1>
+	<hr />
+	<div id="clock"></div>
+</body>
+
+</html>

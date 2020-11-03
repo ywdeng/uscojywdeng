@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Hover Enlarge</title>
+	<style>
+		#image {
+			text-align: center;
+			margin: 0px auto;
+			padding: 0px;
+			width: 350px;
+			height: 206px;
+			background-image: url("images/tomato.jpg");
+			background-size: 80%;
+			background-repeat: no-repeat;
+			background-position: center center;
+			border: thin black solid;
+			transition-duration: 2s;
+		}
+
+		#image:hover {
+			background-size: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="image">&nbsp;</div>
+</body>
+
+</html>

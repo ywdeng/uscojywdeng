@@ -1,0 +1,14 @@
+{
+  "name": "test-sqlite3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-sqlite3.js",
+  "scripts": {
+    "test": "node test-sqlite3.js"
+  },
+  "author": "ywdeng",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite3": "^4.0.8"
+  }
+}

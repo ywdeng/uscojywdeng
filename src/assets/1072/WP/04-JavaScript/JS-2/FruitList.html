@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script>
+		var IMAGE_BASE = "./images/";
+		var imageArray = new Array(
+			"apple.jpg", "asparagus.jpg",
+			"banana.jpg", "broccoli.jpg", "cantaloupe.jpg", "carrot.jpg",
+			"corn.jpg", "grapefruit.jpg", "grapes.jpg",
+			"kiwi.jpg", "onion.jpg", "peach.jpg", "pear.jpg",
+			"pepper.jpg", "pickle.jpg", "pineapple.jpg", "raspberry.jpg",
+			"strawberry.jpg", "tomato.jpg", "watermelon.jpg");
+		var timer = setTimeout("startAutoPlay()", 5000);
+		function extractFruitName(imageName) {
+			var name = imageName.split(".");
+			return name[0];
+		}
+		function showImage(imageName) {
+			document.getElementById("fullImage").src = IMAGE_BASE + imageName;
+			document.getElementById("imageName").innerHTML = extractFruitName(imageName);
+		}
+		function setImage(imageName) {
+			window.clearTimeout(timer);
+			showImage(imageName);
+			timer = setTimeout("startAutoPlay()", 5000);
+		}
+		function init() {
+			var str = "<h1>蔬菜與水果</h1>\n<table border='0' class='center'>";
+			str += "<tr valign='top' align='center'>";
+			for (i = 0; i < imageArray.length;) {
+				str += "<td><img src=\"" + IMAGE_BASE + imageArray[i] +
+					"\" width='30' onMouseOver='setImage(\"" +
+					imageArray[i] + "\")' /></td>\n";
+				i++;
+				if ((i < imageArray.length) && (i % 10 == 0)) {
+					str += "</tr><tr valign='top' align='center'>";
+				}
+			}
+			str += "</tr></table>\n";
+			document.getElementById("iconList").innerHTML = str;
+		}
+		function startAutoPlay() {
+			var n = Math.random() * imageArray.length;
+			n = n & 0xFFFFFFFF;
+			showImage(imageArray[n]);
+			timer = setTimeout("startAutoPlay()", 2000);
+		}
+	</script>
+	<style>
+		td img:hover {
+			border-color: red;
+			border-radius: 10px
+		}
+
+		td img {
+			border: solid thin black;
+			padding: 4px;
+		}
+
+		.center {
+			text-align: center;
+			margin: 1em auto;
+		}
+	</style>
+	<title>蔬菜與水果</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div id="iconList" class="center"></div>
+	<div class="center"> <img id="fullImage" src="./images/apple.jpg" /></div>
+	<div id="imageName" class="center">apple</div>
+	<hr />
+</body>
+<script>
+	init();
+</script>
+
+</html>

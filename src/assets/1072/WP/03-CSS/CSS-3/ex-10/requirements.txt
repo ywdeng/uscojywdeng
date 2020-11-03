@@ -1,0 +1,12 @@
+1. 背景圖重複填滿，不隨文字捲動。
+	background-image, background-repeat, 
+	background-attachment: fixed
+2. 字型加大(Larger)。
+	font-size: lrager
+3. 文字左右對齊(Justify)
+	text-align: justify
+4. article 水平置中，寬度 800px，Padding 1em。
+	margin: 1em auto; 
+5. 清單以 DL 製作，兩個項目之間間隔 1em。
+	margin-top: 1em
+6. 大標題 h1 水平置中	

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <title>第三屆軟體專案管理營</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="javascripts/validate.js"></script>
+</head>
+
+<body>
+  <article <% if (postback) __append('style="background-color: rgb(190, 181, 224)"') %>>
+    <header>
+      <h1>第三屆軟體專案管理營</h1>
+      <% if (postback) { %>
+      <h2>報名確認</h2>
+      <% } else { %>
+      <h2>線上報名</h2>
+      <% } %>
+      <hr>
+    </header>
+    <form id="f1" action="/register" method="post" onsubmit="return validateInput()">
+      <table id="main">
+        <tr>
+          <th>帳號：</th>
+          <td>
+            <input type="text" name="theAccount" id="theAccount" maxlength="12" required autofocus
+              value="<%= theAccount %>" <% if (postback) __append('readonly') %>>
+          </td>
+          <th>姓名：</th>
+          <td><input name="userName" type="text" id="userName" maxlength="50" required autocomplete="off"
+              value="<%= userName %>" <% if (postback) __append('readonly') %>></td>
+        </tr>
+        <tr>
+          <th>密碼：</th>
+          <td><input type="password" title="密碼至少8個字元，須包含大小寫英文字母以及數字。" name="thePassword" id="thePassword" required
+              value="<%= thePassword %>" <% if (postback) __append('readonly') %>></td>
+          <th>再次輸入密碼：</th>
+          <td><input type="password" name="confirmPassword" id="confirmPassword" required value="<%= confirmPassword %>"
+              <% if (postback) __append('readonly') %>></td>
+        </tr>
+        <tr>
+          <th>聯絡電話：</th>
+          <td><input name="telNumber" type="tel" id="telNumber" maxlength="30" value="<%= telNumber %>"
+              <% if (postback) __append('readonly') %>></td>
+          <th>手機號碼：</th>
+          <td><input name="mobileNumber" type="tel" id="mobileNumber" maxlength="30" value="<%= mobileNumber %>"
+              <% if (postback) __append('readonly') %>></td>
+        </tr>
+        <tr>
+          <th>聯絡地址：</th>
+          <td colspan="3"><textarea name="contactAddress" cols="80" rows="4" id="contactAddress"
+              <% if (postback) __append('readonly') %>><%= contactAddress %></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th>電子郵件：</th>
+          <td colspan="3"><input type="email" name="emailAddress" id="emailAddress" size="80" maxlength="100" required
+              value="<%= emailAddress %>" <% if (postback) __append('readonly') %>>
+          </td>
+        </tr>
+        <tr>
+          <th>個人網站：</th>
+          <td colspan="3"><input type="url" name="homepageUrl" id="homepageUrl" size="80" maxlength="100"
+              value="<%= homepageUrl %>" <% if (postback) __append('readonly') %>></td>
+        </tr>
+        <% if (!postback) { %>
+        <tr>
+          <td colspan="4" style="text-align:center"><input type="submit" value="提交">
+            <input type="reset" value="清除"></td>
+        </tr>
+        <% } else {%>
+        <tr>
+          <td colspan="4" style="text-align:center">
+            <!-- The following submit button should work if the browser fully support HTML5:
+            <input type="submit" value="回首頁" formaction="/" formmethod="get" formtarget="_top">
+            -->
+            <!-- JavaScript always works. -->
+            <input type="button" value="回首頁" onclick="goHome()">
+          </td>
+        </tr>
+        <% } %>
+      </table>
+    </form>
+  </article>
+</body>
+<script>
+  document.getElementById('thePassword').onchange = validatePassword;
+  document.getElementById('confirmPassword').onkeyup = confirmPassword;
+  /*
+  document.getElementById('theAccount').focus();
+  */
+</script>
+
+</html>

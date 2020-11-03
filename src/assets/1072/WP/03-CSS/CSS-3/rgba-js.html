@@ -1,0 +1,94 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>調色器</title>
+<style>
+article {
+	margin: 1em;
+	text-align: center;
+	background-color: black;
+}
+table.masterTable {
+	margin: 1em auto;
+	text-align: left;
+}
+tr {
+	vertical-align: top;
+}
+td, th {
+	color: white;
+}
+th {
+	text-align: center;
+	width: 500px;
+}
+#colorBlock {
+	height: 200px;
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: xx-large;
+}
+#codeBlock {
+	text-align:center;
+	font-size:larger;
+	font-family:"Courier New", Courier, monospace;
+}
+</style>
+<script language="javascript">
+function changeColor() {
+	var rangeR = document.getElementById("rangeRed");
+	var rangeG = document.getElementById("rangeGreen");
+	var rangeB = document.getElementById("rangeBlue");
+	var rangeA = document.getElementById("rangeOpacity");
+	var colorBlock = document.getElementById("colorBlock");
+	var codeBlock = document.getElementById("codeBlock");
+	var colorValue = "rgba(" + rangeR.value + "," + rangeG.value + "," + rangeB.value + "," + (rangeA.value/100.0) + ")";
+	colorBlock.style.backgroundColor = colorValue;
+	codeBlock.innerHTML = colorValue;
+}
+</script>
+</head>
+<body>
+<article>
+  <table class="masterTable">
+    <tr style="background-color:#212223">
+      <th>樣式</th>
+      <th>效果</th>
+      <th>程式碼</th>
+    </tr>
+    <tr>
+      <td><table width="100%">
+          <tr>
+            <td>紅 Red</td>
+            <td><input id="rangeRed" type="range" min="0" max="255" width="200" value="255" onChange="changeColor()"></td>
+          </tr>
+          <tr>
+            <td>綠 Green</td>
+            <td><input id="rangeGreen" type="range" min="0" max="255" width="200" value="255" onChange="changeColor()"></td>
+          </tr>
+          <tr>
+            <td>藍 Blue</td>
+            <td><input id="rangeBlue" type="range" min="0" max="255" width="200" value="255" onChange="changeColor()"></td>
+          </tr>
+          <tr>
+            <td>透明度<br>
+              Opacity</td>
+            <td><input id="rangeOpacity" type="range" min="0" max="100" width="200" value="255" onChange="changeColor()"></td>
+          </tr>
+        </table></td>
+      <td><table width="100%">
+          <tr>
+            <td><div id="colorBlock">RGBA</div></td>
+          </tr>
+        </table></td>
+      <td><table width="100%">
+          <tr>
+            <td><div id="codeBlock">rgb(255,255,255,1.0)</div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</article>
+</body>
+</html>

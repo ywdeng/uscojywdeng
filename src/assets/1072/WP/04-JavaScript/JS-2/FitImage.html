@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>隨著視窗縮放的圖片</title>
+	<script>
+		function showMsg() {
+			var d = document.getElementById("msg");
+			var msg = "<p>螢幕寬度：" + screen.width + "，螢幕高度：" + screen.height + "</p>";
+			msg += "<p>螢幕有效寬度：" + screen.availWidth + "，螢幕有效高度：" + screen.availHeight + "</p>";
+			msg += "<p>視窗外部寬度：" + window.outerWidth + "，視窗外部高度：" + window.outerHeight + "</p>";
+			msg += "<p>視窗內部寬度：" + window.innerWidth + "，視窗內部高度：" + window.innerHeight + "</p>";
+			msg += "<p>DIV 寬度：" + d.clientWidth + "， DIV 高度" + d.clientHeight + "</p>";
+			d.innerHTML = msg;
+		}
+		function fit() {
+			showMsg();
+			var d = document.getElementById("msg");
+			var w = window.innerWidth;
+			var h = window.innerHeight - d.clientHeight - 30;
+			var g = document.getElementById("kerokero");
+			if (w < h) {	// 不讓圖片變形， 寬度和高度只設一個
+				g.width = w; 	// 寬度比較小
+			} else {
+				g.height = h;	// 高度比較小
+			}
+			g.title = "w = " + w + ", h = " + h + ", g.width = " + g.width + ", g.height = " + g.height;
+		}
+		window.onresize = fit; // 設定視窗大小變更事件
+	</script>
+</head>
+
+<body onLoad="showMsg()">
+	<article style="text-align:center; margin:0px; padding:0px">
+		<img src="images/kerokero.gif" id="kerokero" />
+		<div id="msg" style="background-color:#FFC; padding:6px; margin:6px;"></div>
+	</article>
+	<script>
+		window.resizeTo(800, 600);
+		fit();
+	</script>
+</body>
+
+</html>

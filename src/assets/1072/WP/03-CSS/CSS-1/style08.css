@@ -1,0 +1,30 @@
+﻿@charset "utf-8";
+/* CSS Document Example */
+
+body {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+}
+article {
+	margin: 1em 10%;
+	background-color: #FFC;
+}
+table {
+	margin: 0 auto;
+}
+header {
+	text-align: center;
+}
+tr {
+	vertical-align: top;
+}
+th {
+	text-align: right;
+}
+td {
+	text-align: left;
+}
+h1, h2, h3 {
+	font-family: "新細明體";
+	font-size: xx-large;
+}

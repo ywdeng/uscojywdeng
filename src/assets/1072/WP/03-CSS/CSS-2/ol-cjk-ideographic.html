@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>中文數字清單</title>
+<style>
+@counter-style cjk-earthly-branch {
+	type: alphabetic;
+	glyphs: '\5B50' '\4E11' '\5BC5' '\536F' '\8FB0' '\5DF3' '\5348' '\672A' '\7533' '\9149' '\620C' '\4EA5';
+	/* '子' '丑' '寅' '卯' '辰' '巳' '午' '未' '申' '酉' '戌' '亥' */
+	suffix: '、';
+}
+@counter-style cjk-heavenly-stem {
+	type: alphabetic;
+	glyphs: '\7532' '\4E59' '\4E19' '\4E01' '\620A' '\5DF1' '\5E9A' '\8F9B' '\58EC' '\7678';
+	/* '甲' '乙' '丙' '丁' '戊' '己' '庚' '辛' '壬' '癸' */
+	suffix: '、';
+}
+ol {
+	list-style-type: cjk-ideographic;
+}
+</style>
+</head>
+
+<body>
+<article>
+  <header>
+    <h1>中文數字清單</h1>
+  </header>
+  <hr>
+  <ol>
+    <li><a href="#">線性代數</a></li>
+    <li><a href="#">離散數學</a></li>
+    <li><a href="#">機率與統計</a></li>
+    <li><a href="#">程式設計</a></li>
+    <li><a href="#">物件導向</a></li>
+    <li><a href="#">資料結構</a></li>
+    <li><a href="#">演算法</a></li>
+  </ol>
+  <hr>
+</article>
+</body>
+</html>

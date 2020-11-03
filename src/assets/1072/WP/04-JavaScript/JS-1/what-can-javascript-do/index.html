@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>What can JavaScript do?</title>
+    <script language="javascript">
+        function incrementCounter() {
+            var cntr = document.getElementById("counter");
+            var x = parseInt(cntr.innerText);
+            if (x) {
+                x = x + 1;
+            } else {
+                x = 1;
+            }
+            cntr.innerText = "" + x;
+        }
+
+        function changeDog() {
+            var dogIndex = document.getElementById("dogIndex");
+            var n = parseInt(dogIndex.value) + 1;
+            if (n > 21) n = 1;
+            dogIndex.value = "" + n;
+            var x = "00" + n;
+            x = x.substring(x.length - 2);
+            var dogImg = document.getElementById("dogImage");
+            dogImg.src = "images/dog-" + x + ".jpg";
+        }
+
+        var colors = ['red','orange','yellow','green','blue','indigo','violet'];
+        function changeColor() {
+            var colorIndex = document.getElementById("colorIndex");
+            var n = (parseInt(colorIndex.value) + 1) % colors.length;
+            colorIndex.value = "" + n;
+            var colorBar = document.getElementById("colorBar");
+            colorBar.style.backgroundColor = colors[n];
+        }
+
+        var timerHandle = 1;
+        var hintCounter = 0;
+        function hideMe() {
+            var xMan = document.getElementById("xMan");
+            xMan.style.display = "none";
+            hintCounter = 0;
+            timerHandle = setInterval("showCounterMessage()", 1000);
+        }
+
+        function showMe() {
+            var xMan = document.getElementById("xMan");
+            xMan.style.display = "inline-block";
+            clearInterval(timerHandle);
+            var hintCounterMessage = document.getElementById("hintCounterMessage");
+            hintCounterMessage.innerHTML = "...";
+        }
+
+        function showCounterMessage() {
+            var hintCounterMessage = document.getElementById("hintCounterMessage");
+            hintCounter++;
+            hintCounterMessage.innerHTML = "消失 " + hintCounter + " 秒鐘";
+        }
+    </script>
+    <style>
+        #counter {
+            font-weight: bold;
+            color: blue;
+            text-decoration: underline;
+        }
+        button {
+            padding: 4px 1em;
+            margin: 0px 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Can Change HTML Content</h1>
+    <div onmouseover="incrementCounter()">JavaScript 改變 HTML 內容：<span id="counter">1</span></div>
+
+    <h1>JavaScript Can Change HTML Attribute Values</h1>
+    <div onmouseover="changeDog()">JavaScript 改變 HTML 屬性值：<img id="dogImage" src="images/dog-01.jpg">
+        <input type="hidden" value="1" id="dogIndex" />
+    </div>
+
+    <h1>JavaScript Can Change HTML Styles (CSS)</h1>
+    <div onmouseover="changeColor()">JavaScript 改變 CSS 樣式：<span id="colorBar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>.
+        <input type="hidden" value="0" id="colorIndex" />
+    </div>
+
+    <h1>JavaScript Can Hide HTML Elements</h1>
+    <div>JavaScript 隱藏 HTML 元素：<button id="xMan" onclick="hideMe()">隱藏</button><span id="hintCounterMessage"></span></div>
+
+    <h1>JavaScript Can Show HTML Elements</h1>
+    <div>JavaScript 顯示 HTML 元素：<button id="yMan" onclick="showMe()">顯示</button></div>
+
+</body>
+
+</html>

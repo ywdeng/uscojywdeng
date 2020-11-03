@@ -1,0 +1,25 @@
+﻿body {
+	font: normal 1em 標楷體;
+	margin: 1em 10%;
+}
+h1 {
+	color: rgb(23, 109, 109);
+	margin: 1em 0 1em;
+	font-family: "新細明體";
+	font-size: 3em;
+	font-style: italic;
+	font-weight: bold;
+}
+img {
+	margin: 0 20px 0 0;
+	height: 100px;
+}
+h1 img {
+	margin-bottom: -20px;
+}
+footer {
+	text-align:right;
+}
+footer img {
+   vertical-align: top;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <style>
+        body {
+            width: 95%;
+            margin: 1em auto;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        table {
+            margin: 1em auto;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><%= title %></h1>
+    <hr>
+    <form action="/" method="post">
+        <table>
+            <tr>
+                <th class="right">請輸入您的姓名：</th>
+                <td class="left"><input type="text" name="userName" required></td>
+            </tr>
+            <tr>
+                <th class="right">性別：</th>
+                <td class="left"><input type="radio" id="genderMale" name="gender" value="male">
+                    <label for="genderMale">男</label>
+                    <input type="radio" id="genderFemale" name="gender" value="female" checked>
+                    <label for="genderFemale">女</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center"><input type="submit">
+                    <input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

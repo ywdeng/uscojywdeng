@@ -1,0 +1,41 @@
+article {
+  margin: 1em;
+  padding: 1em;
+  background-color: #FFC;
+}
+
+header {
+  text-align: center;
+}
+
+tr {
+  vertical-align: top;
+  padding-bottom: 1em;
+}
+
+th {
+  text-align: right;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+input[type='button'], input[type='submit'], input[type='reset'] {
+  /* width: 8em; */
+  padding: 4px;
+}
+
+input[type='image'] {
+  width: 72px;
+  margin: 2px 20px;
+}
+
+#table1 {
+  margin: 1em auto;
+  width: 800px;
+}
+
+.center {
+  text-align:center;
+}

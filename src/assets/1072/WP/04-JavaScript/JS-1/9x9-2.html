@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>九九乘法表</title>
+<style>
+tr.class0 {
+	background-color:#00ffff;
+}
+tr.class1 {
+	background-color:#ffbf00;
+}
+th, td {
+    padding: 4px;
+}
+th:hover, td:hover {
+	background-color:#FF0000;
+	color:#FFFFFF;
+	font-weight:bolder;
+}
+</style>
+</head>
+<body>
+<table border="1" style="margin: 1em auto;">
+<script>
+document.write("<tr style='background-color:#0080ff'>");
+for (y = 2; y <= 9; y++) {
+  document.write("<th>" + y + "</th>");
+}
+document.write("</tr>");
+for (y = 2; y <= 9; y++) {
+  document.write("<tr class='class"+(y & 0x1)+"'>");
+  for (x = 2; x <= 9; x++) {
+    document.write("<td>" + x + "x" + y + "=" + (x*y) + "</td>");
+  }
+  document.write("</tr>");
+}  	
+</script>
+</table>
+</body>
+</html>

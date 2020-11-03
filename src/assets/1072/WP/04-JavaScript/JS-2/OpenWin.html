@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>視窗控制</title>
+<script language="javascript">
+function openWin() {
+	subWin = window.open("RunningButton.html", "page1", "height=100,width=100,location=0,menubar=0,resizable=0,status=0,titlebar=0,toolbar=0");
+}
+function closeWin() {
+	subWin.close();
+}
+</script>
+<style>
+article {
+	margin: 1em 10%;
+  padding: 1em;
+	background-color: #FFC;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<article>
+  <h1>開視窗練習</h1>
+  <hr>
+  <button id="btnOpen" onClick="openWin()">開啟視窗</button>
+  &nbsp;
+  <button id="btnClose" onClick="closeWin()">關閉視窗</button>
+</article>
+</body>
+</html>

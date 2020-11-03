@@ -1,0 +1,30 @@
+.site {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas:
+		"title title"
+		"masthead sidebar"
+		"main sidebar"
+		"footer sidebar";
+}
+
+.masthead {
+	grid-area: masthead;
+}
+
+.page-title {
+	grid-area: title;
+}
+
+.main-content {
+	grid-area: main;
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+.footer-content {
+	grid-area: footer;
+}

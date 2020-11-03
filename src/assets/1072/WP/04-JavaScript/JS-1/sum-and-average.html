@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>計算總和與平均</title>
+	<script>
+		function doCalc() {
+			var nums = document.getElementById("nums");
+			var numbers = nums.value.split(/[\s,]+/);
+			var sum = 0;
+			var count = 0;
+			for (var idx in numbers) {
+				console.log(numbers[idx]);
+				sum += Number(numbers[idx].trim());
+				count++;
+			}
+			document.getElementById("sum").value = sum;
+			document.getElementById("avg").value = sum / count;
+		}
+	</script>
+	<style>
+		body {
+			background-color: #CFF;
+		}
+		article {
+			margin: 1em auto;
+			width: 36em;
+		}
+		header {
+			text-align: center;
+		}
+		section {
+			padding: 1em;
+		}
+		input[type="text"] {
+			text-align: right;
+		}
+		table {
+			margin: 4px auto;
+		}
+		td {
+			vertical-align: text-top;
+			padding: 1ex;
+		}
+	</style>
+</head>
+<body>
+	<article>
+		<header>
+			<h1>計算總和與平均</h1>
+			<hr />
+		</header>
+		<table>
+			<tr>
+				<td>請輸入數字：<br />
+					<textarea rows="10" cols="20" id="nums"></textarea>
+                </td>
+				<td><br /><br />
+					<input type="button" onclick="doCalc()" value="計算">
+                </td>
+				<td>
+					總和：<br />
+					<input type="text" id="sum" readonly><br />
+					平均：<br />
+					<input type="text" id="avg" readonly>
+				</td>
+			</tr>
+		</table>
+	</article>
+</body>
+</html>

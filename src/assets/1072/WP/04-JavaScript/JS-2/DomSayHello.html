@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>無中生有產生DOM節點</title>
+  <script>
+    function sayHello2() {
+      var name = prompt("請輸入您的大名", "");
+      if (name) {
+        var d = document.getElementById("hello");
+        var p = document.createElement("p");
+        var txt = document.createTextNode("歡迎光臨 " + name + " !");
+        p.appendChild(txt);
+        d.appendChild(p);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>無中生有產生DOM節點</h1>
+  <hr />
+  <h2>
+    <a href="javascript:sayHello2()">點這裡...</a>
+  </h2>
+  <div id="hello"></div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>調色器</title>
+<style>
+article {
+	margin: 1em;
+	text-align: center;
+	background-color: black;
+}
+table.masterTable {
+	margin: 1em auto;
+	text-align: left;
+}
+tr {
+	vertical-align: top;
+}
+td, th {
+	color: white;
+}
+th {
+	text-align: center;
+	width: 500px;
+}
+#colorBlock {
+	height: 200px;
+	background-image: linear-gradient(90deg, white, black);
+	text-align: center;
+	font-size: xx-large;
+}
+#codeBlock {
+	text-align:center;
+	font-size:larger;
+	font-family:"Courier New", Courier, monospace;
+}
+</style>
+<script language="javascript">
+function changeColor() {
+	var color1 = document.getElementById("color1");
+	var color2 = document.getElementById("color2");
+	var rangeA = document.getElementById("rangeAngle");
+	var colorBlock = document.getElementById("colorBlock");
+	var codeBlock = document.getElementById("codeBlock");
+	var colorValue = "linear-gradient("+rangeA.value+"deg, "
+		+color1.value+", "+color2.value+")";
+	colorBlock.style.backgroundImage = colorValue;
+	codeBlock.innerHTML = colorValue;
+}
+</script>
+</head>
+<body>
+<article>
+  <table class="masterTable">
+    <tr style="background-color:#212223">
+      <th>樣式</th>
+      <th>效果</th>
+      <th>程式碼</th>
+    </tr>
+    <tr>
+      <td>
+      <table width="100%">
+          <tr>
+            <td>第一個顏色:</td>
+            <td><input id="color1" type="color" value="#FFFFFF" onChange="changeColor()"></td>
+          </tr>
+          <tr>
+            <td>第二個顏色:</td>
+            <td><input id="color2" type="color" value="#000000" onChange="changeColor()"></td>
+          </tr>
+          <tr>
+            <td>角度</td>
+            <td><input id="rangeAngle" type="range" min="0" max="360" width="200" value="90" onChange="changeColor()"></td>
+          </tr>
+        </table></td>
+      <td><table width="100%">
+          <tr>
+            <td><div id="colorBlock">漸層色</div></td>
+          </tr>
+        </table></td>
+      <td><table width="100%">
+          <tr>
+            <td><div id="codeBlock">linear-gradient(90deg, white, black)</div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</article>
+</body>
+</html>

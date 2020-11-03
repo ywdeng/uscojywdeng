@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>第三屆軟體專案管理營</title>
+<style>
+article {
+	margin: 1em 10%;
+	padding: 1em;
+	background-color: #FFC;
+}
+header {
+	text-align: center;
+}
+tr {
+	vertical-align: top;
+}
+th {
+	text-align: right;
+}
+</style>
+</head>
+<body>
+<article>
+  <header>
+    <h1>第三屆軟體專案管理營</h1>
+    <h2>線上報名</h2>
+    <hr>
+  </header>
+  <form id="f1" action="/Register.aspx" method="post">
+    <table border="0" align="center">
+      <tr>
+        <th>帳號：</th>
+        <td><input type="text" name="txtAccount" id="txtAccount" maxlength="12"></td>
+        <th>姓名：</th>
+        <td><input name="txtName" type="text" id="txtName" maxlength="50"></td>
+      </tr>
+      <tr>
+        <th>密碼：</th>
+        <td><input type="password" name="pwd1" id="pwd1"></td>
+        <th>再次輸入密碼：</th>
+        <td><input type="password" name="pwd2" id="pwd2"></td>
+      </tr>
+      <tr>
+        <th>聯絡電話：</th>
+        <td><input name="txtTel" type="tel" id="txtTel" maxlength="30"></td>
+        <th>手機號碼：</th>
+        <td><input name="txtMobile" type="tel" id="txtMobile" maxlength="30"></td>
+      </tr>
+      <tr>
+        <th>聯絡地址：</th>
+        <td colspan="3"><textarea name="txtAddress" cols="80" rows="4" id="txtAddress"></textarea></td>
+      <tr>
+        <th>電子郵件：</th>
+        <td colspan="3"><input type="email" name="txtEmail" id="txtEmail" size="80" maxlength="100"></td>
+      </tr>
+      <tr>
+        <th>個人網站：</th>
+        <td colspan="3"><input type="url" name="txtHomepage" id="txtHomepage" size="80" maxlength="100"></td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center"><input type="submit">
+          <input type="reset"></td>
+      </tr>
+    </table>
+  </form>
+</article>
+</body>
+</html>

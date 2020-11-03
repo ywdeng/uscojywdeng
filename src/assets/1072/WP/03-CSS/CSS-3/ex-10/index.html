@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>文字左右對齊</title>
+<meta charset="utf-8">
+<style>
+article {
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	font-size: larger;
+	margin: 1em auto;
+	width: 800px;
+	text-align: justify;
+	padding: 1em;
+}
+h1 {
+	text-align: center;
+}
+dt{
+	margin-top: 1em;
+}
+</style>
+</head>
+<body>
+<article>
+  <header>
+    <h1>DEP 與 EVP</h1>
+    <hr>
+  </header>
+  <p>為了避免駭客或病毒程式故意傳送大量資料給特定程式, 『塞爆』該程式用來儲存資料的記憶體區塊, 導致系統不正常運作, 於是軟硬體業發展出防禦機制。這種機制在 Intel 稱為【NX】(No eXecute, 不執行), 在微軟稱為【DEP】（Data Execution Prevention, 資料執行防止）, 在 AMD 則稱為【EVP】（Enhanced Virus Protection）。 </p>
+  <p> 以下是有關資料執行防止 (DEP) 的一些常見問題答覆。</p>
+  <dl>
+    <dt>什麼是 DEP？</dt>
+    <dd>DEP 是一項安全性功能，可協助避免病毒與其他安全性威脅所造成的損害。DEP 可透過監視程式來協助保護電腦，確保程式能夠安全地使用系統記憶體。如果程式嘗試以不正確的方式從記憶體中執行程式碼，DEP 就會關閉該程式。</dd>
+    <dt>DEP 會監視哪些程式？</dt>
+    <dd>DEP 會自動監視基本的 Windows 程式及服務。您可以讓 DEP 監視所有程式，來提高保護。若要提高 DEP 保護，請參閱變更資料執行防止設定 .</dd>
+    <dt>如果 DEP 關閉某個程式，則再執行該程式會安全嗎？</dt>
+    <dd>是的，但是只有當您保持該程式的 DEP 開啟，讓 Windows 可以繼續偵測嘗試從受保護的記憶體位置執行程式碼並協助避免攻擊時，執行該程式才安全。</dd>
+    <dt>如果 DEP 持續關閉同一個程式，是否表示我的電腦正遭受攻擊？</dt>
+    <dd>如果您是使用建議的安全性設定且防毒軟體未偵測到威脅，則您的電腦可能未遭受攻擊。在此情況下，程式在 DEP 開啟時可能無法正確地執行。 在變更任何 DEP 設定之前，請先檢查有無 DEP 相容版本的程式或來自軟體發行者的更新。</dd>
+    <dt>如何避免 DEP 關閉我信任的程式？</dt>
+    <dd>首先，請造訪軟體發行者的網站，查看是否有 DEP 相容版本的程式。如果發行者未發佈更新、DEP 相容版本的程式，您可以關閉被關閉之程式的 DEP。 您可以使用該程式，但可能會遭受攻擊，使其他程式及檔案受到波及。 <br>
+      如果您選擇關閉程式的 DEP，最好經常檢查有無更新版本的程式，待更新之後再度開啟 DEP。 若要關閉程式的 DEP，請參閱變更資料執行防止設定。</dd>
+    <dt>如果 DEP 關閉的程式是 Windows 的一部份 (如 svchost.exe 或 explorer.exe)，該怎麼辦？</dt>
+    <dd>svchost.exe 與 explorer.exe 程式是 Windows 作業系統的一部份。如果 DEP 關閉它們或其他 Windows 服務，可能是由其他軟體發行者建立、在 Windows 內部運作的較小程式 (例如延伸功能) 所造成。 如果您最近曾安裝任何程式，並且注意到 DEP 關閉 Windows 型的程式，請與軟體發行者聯繫，確認是否有更新的 DEP 相容版本，或是嘗試解除該安裝程式。</dd>
+    <dt>如果我的 DEP 設定指出電腦的處理器不支援硬體式的 DEP，我是否仍然受到保護？</dt>
+    <dd>是的。DEP 是 Windows 的軟體式功能。有些電腦處理器也以各種名稱提供硬體式的 DEP。這些處理器使用硬體技術來避免程式在受保護的記憶體位置執行程式碼。 如果處理器不支援硬體式 DEP，Windows 會使用軟體式 DEP 來協助保護您的電腦。</dd>
+  </dl>
+</article>
+</body>
+</html>
