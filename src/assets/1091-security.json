@@ -33,6 +33,11 @@
                 "url": "CH04/04-AccessControl.pptx",
                 "target": "_blank",
                 "name": "Access Control 存取控制"
+            },
+            {
+                "url": "CH05/05-DatabaseAndDataCenterSecurity.pptx",
+                "target": "_blank",
+                "name": "Database and Data Center Security 資料庫與資料中心安全"
             }
         ]
     },
@@ -91,6 +96,12 @@
     "quiz": {
         "title": "考試：",
         "baseUrl": "assets/1091/Security",
-        "items": []
+        "items": [
+            {
+                "url": "review-ch1-ch5.pdf",
+                "target": "_blank",
+                "name": "複習題，範圍Ch1~Ch5"
+            }
+        ]
     }
 }
