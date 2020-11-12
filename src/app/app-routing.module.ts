@@ -5,10 +5,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const routes: Routes = [
   {
     path: 'course/:semaster/:courseId',
-    loadChildren: () => import("./course/course.module").then(m => m.CourseModule)
+    loadChildren: () => import('./course/course.module').then(m => m.CourseModule)
   },
   {
-    path: "vitae",
+    path: 'vitae',
     loadChildren: () => import('./vitae/vitae.module').then(m => m.VitaeModule)
   },
   {
@@ -17,7 +17,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: "**",
+    path: '**',
     component: PageNotFoundComponent
   }
 ];
